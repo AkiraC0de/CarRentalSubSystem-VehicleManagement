@@ -30,7 +30,12 @@
             this.maintenanceMangementBtn = new FontAwesome.Sharp.IconButton();
             this.vehManagementBtn = new FontAwesome.Sharp.IconButton();
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.panelHeader = new System.Windows.Forms.Panel();
+            this.maximizeBtn = new FontAwesome.Sharp.IconButton();
+            this.minimizeBtn = new FontAwesome.Sharp.IconButton();
+            this.closeBtn = new FontAwesome.Sharp.IconButton();
             this.panelMenu.SuspendLayout();
+            this.panelHeader.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -45,7 +50,7 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(355, 809);
+            this.panelMenu.Size = new System.Drawing.Size(354, 809);
             this.panelMenu.TabIndex = 0;
             // 
             // reportAndAnalyticsBtn
@@ -63,10 +68,10 @@
             this.reportAndAnalyticsBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.reportAndAnalyticsBtn.IconSize = 50;
             this.reportAndAnalyticsBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.reportAndAnalyticsBtn.Location = new System.Drawing.Point(0, 523);
+            this.reportAndAnalyticsBtn.Location = new System.Drawing.Point(0, 550);
             this.reportAndAnalyticsBtn.Name = "reportAndAnalyticsBtn";
             this.reportAndAnalyticsBtn.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
-            this.reportAndAnalyticsBtn.Size = new System.Drawing.Size(355, 85);
+            this.reportAndAnalyticsBtn.Size = new System.Drawing.Size(354, 85);
             this.reportAndAnalyticsBtn.TabIndex = 5;
             this.reportAndAnalyticsBtn.Text = "Reports and Analytic";
             this.reportAndAnalyticsBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -89,10 +94,10 @@
             this.docuManagementBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.docuManagementBtn.IconSize = 50;
             this.docuManagementBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.docuManagementBtn.Location = new System.Drawing.Point(0, 438);
+            this.docuManagementBtn.Location = new System.Drawing.Point(0, 465);
             this.docuManagementBtn.Name = "docuManagementBtn";
             this.docuManagementBtn.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
-            this.docuManagementBtn.Size = new System.Drawing.Size(355, 85);
+            this.docuManagementBtn.Size = new System.Drawing.Size(354, 85);
             this.docuManagementBtn.TabIndex = 4;
             this.docuManagementBtn.Text = "Document Management";
             this.docuManagementBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -115,10 +120,10 @@
             this.damageAndInspecBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.damageAndInspecBtn.IconSize = 50;
             this.damageAndInspecBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.damageAndInspecBtn.Location = new System.Drawing.Point(0, 353);
+            this.damageAndInspecBtn.Location = new System.Drawing.Point(0, 380);
             this.damageAndInspecBtn.Name = "damageAndInspecBtn";
             this.damageAndInspecBtn.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
-            this.damageAndInspecBtn.Size = new System.Drawing.Size(355, 85);
+            this.damageAndInspecBtn.Size = new System.Drawing.Size(354, 85);
             this.damageAndInspecBtn.TabIndex = 3;
             this.damageAndInspecBtn.Text = "Damage and Inspection";
             this.damageAndInspecBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -141,10 +146,10 @@
             this.maintenanceMangementBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.maintenanceMangementBtn.IconSize = 50;
             this.maintenanceMangementBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.maintenanceMangementBtn.Location = new System.Drawing.Point(0, 268);
+            this.maintenanceMangementBtn.Location = new System.Drawing.Point(0, 295);
             this.maintenanceMangementBtn.Name = "maintenanceMangementBtn";
             this.maintenanceMangementBtn.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
-            this.maintenanceMangementBtn.Size = new System.Drawing.Size(355, 85);
+            this.maintenanceMangementBtn.Size = new System.Drawing.Size(354, 85);
             this.maintenanceMangementBtn.TabIndex = 2;
             this.maintenanceMangementBtn.Text = "Maintenance Management";
             this.maintenanceMangementBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -167,10 +172,10 @@
             this.vehManagementBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.vehManagementBtn.IconSize = 50;
             this.vehManagementBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.vehManagementBtn.Location = new System.Drawing.Point(0, 183);
+            this.vehManagementBtn.Location = new System.Drawing.Point(0, 210);
             this.vehManagementBtn.Name = "vehManagementBtn";
             this.vehManagementBtn.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
-            this.vehManagementBtn.Size = new System.Drawing.Size(355, 85);
+            this.vehManagementBtn.Size = new System.Drawing.Size(354, 85);
             this.vehManagementBtn.TabIndex = 1;
             this.vehManagementBtn.Text = "Vehicle Management";
             this.vehManagementBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -183,21 +188,95 @@
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(355, 183);
+            this.panelLogo.Size = new System.Drawing.Size(354, 210);
             this.panelLogo.TabIndex = 0;
+            // 
+            // panelHeader
+            // 
+            this.panelHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(64)))), ((int)(((byte)(71)))));
+            this.panelHeader.Controls.Add(this.maximizeBtn);
+            this.panelHeader.Controls.Add(this.minimizeBtn);
+            this.panelHeader.Controls.Add(this.closeBtn);
+            this.panelHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelHeader.ForeColor = System.Drawing.Color.White;
+            this.panelHeader.Location = new System.Drawing.Point(354, 0);
+            this.panelHeader.Name = "panelHeader";
+            this.panelHeader.Size = new System.Drawing.Size(1266, 110);
+            this.panelHeader.TabIndex = 1;
+            this.panelHeader.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DragForm);
+            // 
+            // maximizeBtn
+            // 
+            this.maximizeBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.maximizeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(54)))), ((int)(((byte)(61)))));
+            this.maximizeBtn.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
+            this.maximizeBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(84)))), ((int)(((byte)(91)))));
+            this.maximizeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.maximizeBtn.ForeColor = System.Drawing.Color.White;
+            this.maximizeBtn.IconChar = FontAwesome.Sharp.IconChar.WindowMaximize;
+            this.maximizeBtn.IconColor = System.Drawing.Color.Gainsboro;
+            this.maximizeBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.maximizeBtn.IconSize = 25;
+            this.maximizeBtn.Location = new System.Drawing.Point(1140, 0);
+            this.maximizeBtn.Name = "maximizeBtn";
+            this.maximizeBtn.Size = new System.Drawing.Size(60, 24);
+            this.maximizeBtn.TabIndex = 2;
+            this.maximizeBtn.UseVisualStyleBackColor = false;
+            this.maximizeBtn.Click += new System.EventHandler(this.maximizeBtn_Click);
+            // 
+            // minimizeBtn
+            // 
+            this.minimizeBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.minimizeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(54)))), ((int)(((byte)(61)))));
+            this.minimizeBtn.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
+            this.minimizeBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(84)))), ((int)(((byte)(91)))));
+            this.minimizeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.minimizeBtn.ForeColor = System.Drawing.Color.White;
+            this.minimizeBtn.IconChar = FontAwesome.Sharp.IconChar.Minus;
+            this.minimizeBtn.IconColor = System.Drawing.Color.Gainsboro;
+            this.minimizeBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.minimizeBtn.IconSize = 28;
+            this.minimizeBtn.Location = new System.Drawing.Point(1074, 0);
+            this.minimizeBtn.Name = "minimizeBtn";
+            this.minimizeBtn.Size = new System.Drawing.Size(60, 24);
+            this.minimizeBtn.TabIndex = 1;
+            this.minimizeBtn.UseVisualStyleBackColor = false;
+            this.minimizeBtn.Click += new System.EventHandler(this.minimizeBtn_Click);
+            // 
+            // closeBtn
+            // 
+            this.closeBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.closeBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(54)))), ((int)(((byte)(61)))));
+            this.closeBtn.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
+            this.closeBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(84)))), ((int)(((byte)(91)))));
+            this.closeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.closeBtn.ForeColor = System.Drawing.Color.White;
+            this.closeBtn.IconChar = FontAwesome.Sharp.IconChar.Remove;
+            this.closeBtn.IconColor = System.Drawing.Color.Gainsboro;
+            this.closeBtn.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.closeBtn.IconSize = 28;
+            this.closeBtn.Location = new System.Drawing.Point(1206, 0);
+            this.closeBtn.Name = "closeBtn";
+            this.closeBtn.Size = new System.Drawing.Size(60, 24);
+            this.closeBtn.TabIndex = 0;
+            this.closeBtn.UseVisualStyleBackColor = false;
+            this.closeBtn.Click += new System.EventHandler(this.CloseButton_Click);
             // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1620, 809);
+            this.ControlBox = false;
+            this.Controls.Add(this.panelHeader);
             this.Controls.Add(this.panelMenu);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Dashboard";
-            this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
+            this.WindowState = System.Windows.Forms.FormWindowState.Normal;
             this.panelMenu.ResumeLayout(false);
+            this.panelHeader.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -211,5 +290,9 @@
         private FontAwesome.Sharp.IconButton docuManagementBtn;
         private FontAwesome.Sharp.IconButton damageAndInspecBtn;
         private FontAwesome.Sharp.IconButton maintenanceMangementBtn;
+        private System.Windows.Forms.Panel panelHeader;
+        private FontAwesome.Sharp.IconButton closeBtn;
+        private FontAwesome.Sharp.IconButton maximizeBtn;
+        private FontAwesome.Sharp.IconButton minimizeBtn;
     }
 }
