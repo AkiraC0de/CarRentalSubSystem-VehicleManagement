@@ -24,10 +24,10 @@
         /// </summary>
         private void InitializeComponent() {
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.pageLabel = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.addNewVehBtn = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.pageLabel = new System.Windows.Forms.Label();
+            this.addNewVehBtn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GradientPanel1.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
@@ -48,18 +48,6 @@
             this.guna2GradientPanel1.Size = new System.Drawing.Size(1274, 683);
             this.guna2GradientPanel1.TabIndex = 1;
             // 
-            // pageLabel
-            // 
-            this.pageLabel.AutoSize = true;
-            this.pageLabel.BackColor = System.Drawing.Color.Transparent;
-            this.pageLabel.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pageLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
-            this.pageLabel.Location = new System.Drawing.Point(25, 25);
-            this.pageLabel.Name = "pageLabel";
-            this.pageLabel.Size = new System.Drawing.Size(171, 43);
-            this.pageLabel.TabIndex = 6;
-            this.pageLabel.Text = "Cars List";
-            // 
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
@@ -71,6 +59,30 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(1274, 111);
             this.guna2Panel1.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Gray;
+            this.label1.Location = new System.Drawing.Point(29, 68);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(234, 21);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Easily manage all your cars.";
+            // 
+            // pageLabel
+            // 
+            this.pageLabel.AutoSize = true;
+            this.pageLabel.BackColor = System.Drawing.Color.Transparent;
+            this.pageLabel.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pageLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
+            this.pageLabel.Location = new System.Drawing.Point(25, 25);
+            this.pageLabel.Name = "pageLabel";
+            this.pageLabel.Size = new System.Drawing.Size(171, 43);
+            this.pageLabel.TabIndex = 6;
+            this.pageLabel.Text = "Cars List";
             // 
             // addNewVehBtn
             // 
@@ -90,19 +102,7 @@
             this.addNewVehBtn.Size = new System.Drawing.Size(190, 60);
             this.addNewVehBtn.TabIndex = 0;
             this.addNewVehBtn.Text = "Add New Car";
-            this.addNewVehBtn.Click += new System.EventHandler(this.guna2Button1_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = Dashboard.Theme.SecondaryText;
-            this.label1.Location = new System.Drawing.Point(29, 68);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(234, 21);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Easily manage all your cars.";
+            this.addNewVehBtn.Click += new System.EventHandler(this.addNewVehBtn_Click);
             // 
             // VehManagement
             // 

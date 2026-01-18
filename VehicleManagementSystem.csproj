@@ -97,6 +97,12 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\AddNewVeh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddNewVeh.Designer.cs">
+      <DependentUpon>AddNewVeh.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\MaintenanceManagement.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,9 +117,12 @@
     <Compile Include="Forms\VehManagement.Designer.cs">
       <DependentUpon>VehManagement.cs</DependentUpon>
     </Compile>
-    <Compile Include="CLasses\WindowControls.cs" />
+    <Compile Include="Classes\WindowControls.cs" />
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddNewVeh.resx">
+      <DependentUpon>AddNewVeh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MaintenanceManagement.resx">
       <DependentUpon>MaintenanceManagement.cs</DependentUpon>

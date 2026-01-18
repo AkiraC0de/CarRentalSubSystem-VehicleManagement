@@ -8,14 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace VehicleManagementSystem.Resources {
-    public partial class VehManagement : Form {
-        public VehManagement() {
+namespace VehicleManagementSystem.Forms {
+    public partial class AddNewVeh : Form {
+        public AddNewVeh() {
             InitializeComponent();
-        }
-
-        private void addNewVehBtn_Click(object sender, EventArgs e) {
-
         }
     }
 }

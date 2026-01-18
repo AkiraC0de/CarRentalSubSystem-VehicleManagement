@@ -146,7 +146,6 @@ namespace VehicleManagementSystem {
 
         private void maintenanceMangementBtn_Click(object sender, EventArgs e) {
             ActivateButton(sender, FormPageTitles.MaintenanceManagement);
-            AddHeaderLabel("TES");
             OpenForm(new MaintenanceManagement());
         }
     }
