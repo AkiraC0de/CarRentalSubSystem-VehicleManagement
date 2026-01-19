@@ -278,7 +278,11 @@ namespace VehicleManagementSystem {
             // 
             // panelDesktop
             // 
-            this.panelDesktop.BackColor = System.Drawing.Color.White;
+            this.panelDesktop.BackColor = System.Drawing.Color.Transparent;
+            this.panelDesktop.BorderRadius = 20;
+            this.panelDesktop.CustomizableEdges.BottomLeft = false;
+            this.panelDesktop.CustomizableEdges.BottomRight = false;
+            this.panelDesktop.CustomizableEdges.TopRight = false;
             this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktop.FillColor = System.Drawing.Color.White;
             this.panelDesktop.Location = new System.Drawing.Point(354, 80);
@@ -290,6 +294,7 @@ namespace VehicleManagementSystem {
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1620, 809);
             this.ControlBox = false;
@@ -297,7 +302,6 @@ namespace VehicleManagementSystem {
             this.Controls.Add(this.panelHeader);
             this.Controls.Add(this.panelMenu);
             this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.panelMenu.ResumeLayout(false);

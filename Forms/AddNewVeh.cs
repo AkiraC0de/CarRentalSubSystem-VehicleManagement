@@ -14,8 +14,6 @@ namespace VehicleManagementSystem.Forms {
             InitializeComponent();
         }
 
-        private void AddNewVeh_Load(object sender, EventArgs e) {
-
-        }
+       
     }
 }

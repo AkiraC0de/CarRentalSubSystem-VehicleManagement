@@ -14,47 +14,29 @@ namespace VehicleManagementSystem {
 
         // Fields
         public static MainForm Instance { get; private set; }
-        private Form ActiveForm;
-        private Label labelComponent;
+        public static Panel ChildFormContainer { get; private set; }
 
         private WindowControls WindowActions;
-        private MenuRenderer MenuHandler;
+        private UIRenderer MenuHandler;
 
-        private void InitializeWindow() {
-            //ActivateButton(vehManagementBtn, UIConfig.Titles.VehManagement);
-
-            // Helpers
-            WindowActions = new WindowControls(this);
-            MenuHandler = new MenuRenderer(panelMenu);
-
-            LoadDefaultView();
-        }
+        private Label labelComponent;
 
         private void LoadDefaultView() {
-            WindowActions.ToggleMaximize(maximizeBtn);
-            OpenForm(new VehManagement());
+            //WindowActions.ToggleMaximize(maximizeBtn);
+            NavigationHelper.OpenForm(new VehManagement());
             MenuHandler.ActivateButton(vehManagementBtn);
         }
 
         public MainForm() {
             Instance = this;
             InitializeComponent();
-            InitializeWindow();
-        }
 
-        public void OpenForm(Form childForm) {
-            if (ActiveForm != null) {
-                ActiveForm.Close();
-            }
-            panelDesktop.Controls.Clear();
-            ActiveForm = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            panelDesktop.Controls.Add(childForm);
-            panelDesktop.Tag = childForm;
-            childForm.BringToFront();
-            childForm.Show();   
+            // Initialize Helpers Classes
+            WindowActions = new WindowControls(this);
+            MenuHandler = new UIRenderer(panelMenu);
+
+            ChildFormContainer = panelDesktop;
+            LoadDefaultView();
         }
 
         public void AddHeaderLabel(string label) {
@@ -62,7 +44,7 @@ namespace VehicleManagementSystem {
 
             labelComponent.Tag = label;
             labelComponent.Size = new System.Drawing.Size(207, 200);
-            labelComponent.ForeColor = UIConfig.Theme.Primary;
+            labelComponent.ForeColor = AppConfig.Theme.Primary;
             labelComponent.BackColor = System.Drawing.Color.Transparent;
             labelComponent.Font = new Font("Arial", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             labelComponent.Location = new Point(labelPage.Location.X + labelPage.Width, labelPage.Location.Y);
@@ -88,15 +70,17 @@ namespace VehicleManagementSystem {
 
         // Navigation Functions
         private void vehManagementBtn_Click(object sender, EventArgs e) {
+            RemoveHeaderLabel();
             MenuHandler.ActivateButton(sender);
-            labelPage.Text = UIConfig.Titles.VehManagement;
-            OpenForm(new VehManagement());
+            labelPage.Text = AppConfig.Titles.VehManagement;
+            NavigationHelper.OpenForm(new VehManagement());
         }
 
         private void maintenanceMangementBtn_Click(object sender, EventArgs e) {
+            RemoveHeaderLabel();
             MenuHandler.ActivateButton(sender);
-            labelPage.Text = UIConfig.Titles.MaintenanceManagement;
-            OpenForm(new MaintenanceManagement());
+            labelPage.Text = AppConfig.Titles.MaintenanceManagement;
+            NavigationHelper.OpenForm(new MaintenanceManagement());
         }
     }
 }

@@ -9,8 +9,8 @@ namespace VehicleManagementSystem.Forms {
         }
 
         private void addNewVehBtn_Click(object sender, EventArgs e) {
-            MainForm.Instance.OpenForm(new AddNewVeh());
-            MainForm.Instance.AddHeaderLabel(UIConfig.SubTitles.AddNewVehicle);
+            NavigationHelper.OpenForm(new AddNewVeh());
+            MainForm.Instance.AddHeaderLabel(AppConfig.SubTitles.AddNewVehicle);
         }
     }
 }
