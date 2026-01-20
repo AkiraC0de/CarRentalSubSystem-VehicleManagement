@@ -17,7 +17,9 @@ namespace VehicleManagementSystem.Forms {
             AppConfig.SetDoubleBuffer(tableBasicInfo, true);
             AppConfig.SetDoubleBuffer(panelBasicInfoLeft, true);
             AppConfig.SetDoubleBuffer(panelBasicInfoRight, true);
-
+            AppConfig.SetDoubleBuffer(panelPurchaseDetails, true);
+            AppConfig.SetDoubleBuffer(panelCarRental, true);
+            AppConfig.SetDoubleBuffer(tableLowerInputs, true);
         }
 
        

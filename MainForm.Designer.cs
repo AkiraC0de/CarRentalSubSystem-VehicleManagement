@@ -234,7 +234,7 @@ namespace VehicleManagementSystem {
             this.maximizeBtn.Location = new System.Drawing.Point(1124, 15);
             this.maximizeBtn.Name = "maximizeBtn";
             this.maximizeBtn.Size = new System.Drawing.Size(60, 50);
-            this.maximizeBtn.TabIndex = 2;
+            this.maximizeBtn.TabIndex = 10;
             this.maximizeBtn.UseVisualStyleBackColor = false;
             this.maximizeBtn.Click += new System.EventHandler(this.maximizeBtn_Click);
             // 
@@ -253,7 +253,8 @@ namespace VehicleManagementSystem {
             this.minimizeBtn.Location = new System.Drawing.Point(1058, 15);
             this.minimizeBtn.Name = "minimizeBtn";
             this.minimizeBtn.Size = new System.Drawing.Size(60, 50);
-            this.minimizeBtn.TabIndex = 1;
+            this.minimizeBtn.TabIndex = 9;
+            this.minimizeBtn.TabStop = false;
             this.minimizeBtn.UseVisualStyleBackColor = false;
             this.minimizeBtn.Click += new System.EventHandler(this.minimizeBtn_Click);
             // 
@@ -272,7 +273,7 @@ namespace VehicleManagementSystem {
             this.closeBtn.Location = new System.Drawing.Point(1190, 15);
             this.closeBtn.Name = "closeBtn";
             this.closeBtn.Size = new System.Drawing.Size(60, 50);
-            this.closeBtn.TabIndex = 0;
+            this.closeBtn.TabIndex = 10;
             this.closeBtn.UseVisualStyleBackColor = false;
             this.closeBtn.Click += new System.EventHandler(this.CloseButton_Click);
             // 
@@ -294,7 +295,6 @@ namespace VehicleManagementSystem {
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1620, 809);
             this.ControlBox = false;

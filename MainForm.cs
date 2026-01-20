@@ -49,6 +49,7 @@ namespace VehicleManagementSystem {
             labelComponent.Font = new Font("Arial", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             labelComponent.Location = new Point(labelPage.Right, labelPage.Location.Y);
             labelComponent.Text = "> " + label;
+            labelComponent.TabIndex = 2;
 
             panelHeader.Controls.Add(labelComponent);
 
