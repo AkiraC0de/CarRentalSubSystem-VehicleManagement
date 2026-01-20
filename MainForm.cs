@@ -83,5 +83,16 @@ namespace VehicleManagementSystem {
             labelPage.Text = AppConfig.Titles.MaintenanceManagement;
             NavigationHelper.OpenForm(new MaintenanceManagement());
         }
+
+        // Make the scroll more responsive
+        // Boiler plate from stacks overflow
+        protected override void WndProc(ref Message m) {
+            if (m.Msg == 0x115 || m.Msg == 0x114) {
+                if ((m.WParam.ToInt32() & 0xFFFF) == 5) {
+                    m.WParam = (IntPtr)((m.WParam.ToInt32() & ~0xFFFF) | 4);
+                }
+            }
+            base.WndProc(ref m);
+        }
     }
 }

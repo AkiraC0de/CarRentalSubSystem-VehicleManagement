@@ -162,6 +162,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
+    <None Include="Resources\car-gear-icon.png" />
     <None Include="Resources\price-change-icon.png" />
     <None Include="Resources\pen-icon.png" />
     <None Include="Resources\add-circle-icon.png" />
