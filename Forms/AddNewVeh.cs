@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,18 +12,11 @@ using VehicleManagementSystem.Classes;
 
 namespace VehicleManagementSystem.Forms {
     public partial class AddNewVeh : Form {
+
+        private Bitmap vehicleImage;
+
         public AddNewVeh() {
             InitializeComponent();
-
-            AppConfig.SetDoubleBuffer(panelBasicInformation, true);
-            AppConfig.SetDoubleBuffer(tableBasicInfo, true);
-            AppConfig.SetDoubleBuffer(panelBasicInfoLeft, true);
-            AppConfig.SetDoubleBuffer(panelBasicInfoRight, true);
-            AppConfig.SetDoubleBuffer(panelPurchaseDetails, true);
-            AppConfig.SetDoubleBuffer(panelCarRental, true);
-            AppConfig.SetDoubleBuffer(tableLowerInputs, true);
-            AppConfig.SetDoubleBuffer(panelMain, true);
-            AppConfig.SetDoubleBuffer(panelBg, true);
         }
 
         // Automatically add Double Buffering to the whole form
@@ -35,8 +29,30 @@ namespace VehicleManagementSystem.Forms {
             }
         }
 
-        
+        private void guna2TextBox4_TextChanged(object sender, EventArgs e) {
+
+        }
+
+        private void addImageBtn_Click(object sender, EventArgs e) {
+            using (OpenFileDialog openFileDialog = new OpenFileDialog()) {
 
 
+                if (openFileDialog.ShowDialog() == DialogResult.OK) {
+                    if (vehicleImage != null) {
+                        vehicleImage.Dispose();
+                    }
+
+                    string fullPath = openFileDialog.FileName;
+                    string fileNameOnly = System.IO.Path.GetFileName(fullPath);
+
+                    byte[] imageBytes = File.ReadAllBytes(openFileDialog.FileName);
+                    using (MemoryStream ms = new MemoryStream(imageBytes)) {
+                        vehicleImage = new Bitmap(ms);
+                    }
+
+                    vehicleImageFilename.Text = fileNameOnly;
+                }
+            }
+        }
     }
 }
