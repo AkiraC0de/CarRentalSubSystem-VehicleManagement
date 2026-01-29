@@ -1,7 +1,10 @@
-﻿using VehicleManagementSystem.Services.Implementations;
-using VehicleManagementSystem.View.Interfaces;
+﻿using System;
 using VehicleManagementSystem.Data.Enums;
-using System;
+using VehicleManagementSystem.Services.Implementations;
+using VehicleManagementSystem.Services.Interfaces;
+using VehicleManagementSystem.View.Interfaces;
+using VehicleManagementSystem.Models;
+using VehicleManagementSystem.Data;
 
 namespace VehicleManagementSystem.Presentor {
     public class addNewVehiclePresenter {
@@ -16,8 +19,52 @@ namespace VehicleManagementSystem.Presentor {
         public void SaveVehicle() {
             if (!IsAllInputsValid(_view)) 
                 return;
+
+            Vehicle newVehicle = new Vehicle {
+                // Identifiers
+                VIN = _view.VehicleIdentificationNumber,
+                LicensePlate = _view.VehiclePlateNum,
+
+                // Basic Info
+                Manufacturer = _view.VehicleManufacturer,
+                Model = _view.VehicleModel,
+                YearModel = int.Parse(_view.VehicleYearModel),
+                Color = _view.VehicleColor,
+
+                // Classification
+                Category = _view.VehicleCatergory,
+                FuelType = _view.VehicleFuelType,
+                Transmission = _view.VehicleTransmissionType,
+                SeatingCapacity = string.IsNullOrWhiteSpace(_view.VehicleSeatCapacity)
+                    ? (int?)null
+                    : int.Parse(_view.VehicleSeatCapacity),
+
+                // Purchase & Lifecycle
+                PurchaseDate = DateTime.Parse(_view.VehiclePurchaseDate),
+                PurchasePrice = string.IsNullOrWhiteSpace(_view.VehiclePurchasePrice)
+                    ? (decimal?)null
+                    : decimal.Parse(_view.VehiclePurchasePrice),
+
+                // Usage & Status
+                CurrentOdometerReading = int.Parse(_view.VehicleCurrentOdometer),
+                CurrentStatus = "Available", // default business rule
+                DailyRate = decimal.Parse(_view.VehicleDailyRate),
+
+                // Media
+                ImagePath = _view.VehicleImagePath,
+
+                // System fields
+                IsActive = true,
+                CreatedDate = DateTime.Now,
+                LastModifiedDate = DateTime.Now
+            };
             
-            _view.ShowError("SUCCESS");
+            try {
+                _vehicleServices.AddVehicle(newVehicle);
+            } catch (Exception ex) {
+                _view.ShowError(ex.Message);
+            }
+            
         }
 
         private bool IsAllInputsValid(IAddNewVehicleView inputs) {

@@ -2,8 +2,6 @@
 
 namespace VehicleManagementSystem.Models {
     public class Vehicle {
-        public int VehicleID { get; set; }
-
         // Identifiers
         public string VIN { get; set; }
         public string LicensePlate { get; set; }

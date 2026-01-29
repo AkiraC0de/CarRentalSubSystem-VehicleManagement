@@ -1,20 +1,29 @@
-﻿using MySqlConnector;
-using DotNetEnv;
-
+﻿using DotNetEnv;
+using MySqlConnector;
+using System;
+using System.Configuration;
+using System.Windows;
 
 namespace VehicleManagementSystem.Data {
 
     public static class MySQLConnectionContext {
 
         public static MySqlConnection Create() {
-            string host = Env.GetString("DB_HOST");
-            string port = Env.GetString("DB_PORT");
-            string db = Env.GetString("DB_NAME");
-            string user = Env.GetString("DB_USER");
-            string pass = Env.GetString("DB_PASSWORD");
+            Env.Load();
 
-            string connStr = $"Server={host};Port={port};Database={db};User={user};Password={pass};SslMode=Required;";
+            string host = ConfigurationManager.AppSettings["DB_HOST"];
+            string port = ConfigurationManager.AppSettings["DB_PORT"];
+            string db = ConfigurationManager.AppSettings["DB_NAME"];
+            string user = ConfigurationManager.AppSettings["DB_USER"];
+            string pass = ConfigurationManager.AppSettings["DB_PASSWORD"];
 
+            string testc = Environment.GetEnvironmentVariable("DB_HOST");
+
+            MessageBox.Show(host);
+
+            string connStr = $"Server={host};Port={port};Database={db};User ID={user};Password={pass};SslMode=Required;";
+
+            
             return new MySqlConnection(connStr);
         }
 

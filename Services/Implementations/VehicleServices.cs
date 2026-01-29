@@ -9,7 +9,7 @@ namespace VehicleManagementSystem.Services.Implementations {
     public class VehicleServices : IVehicleService {
 
         public void AddVehicle(Vehicle vehicle) {
-            var conn = MySQLConnectionContext.Create();
+            MySqlConnection conn = MySQLConnectionContext.Create();
             conn.Open();
 
             string sql = @"
@@ -53,7 +53,7 @@ namespace VehicleManagementSystem.Services.Implementations {
                 );
             ";
 
-            var cmd = new MySqlCommand(sql, conn);
+            MySqlCommand cmd = new MySqlCommand(sql, conn);
 
             cmd.Parameters.AddWithValue("@vin", vehicle.VIN);
             cmd.Parameters.AddWithValue("@licensePlate", vehicle.LicensePlate);
@@ -74,6 +74,8 @@ namespace VehicleManagementSystem.Services.Implementations {
             cmd.Parameters.AddWithValue("@isActive", vehicle.IsActive);
 
             cmd.ExecuteNonQuery();
+
+            conn.Close();
         }
 
     }
