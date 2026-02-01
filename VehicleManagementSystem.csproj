@@ -260,6 +260,7 @@
     </Compile>
     <Compile Include="View\Forms\frmSystemLogs.Designer.cs">
       <DependentUpon>frmSystemLogs.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\VehicleCardControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -304,6 +305,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Forms\frmSystemLogs.resx">
       <DependentUpon>frmSystemLogs.cs</DependentUpon>
+    </EmbeddedResource>
     <Compile Include="View\Interfaces\IVehicleManagementView.cs" />
     <EmbeddedResource Include="UserControls\VehicleCardControl.resx">
       <DependentUpon>VehicleCardControl.cs</DependentUpon>
