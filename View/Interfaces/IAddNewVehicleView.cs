@@ -23,6 +23,8 @@ namespace VehicleManagementSystem.View.Interfaces {
         string VehicleTransmissionType { get; }
         string VehicleSeatCapacity { get; }
 
+        void ClearAllInputs();
+
         void ShowError(string message);
         void SetFieldError(AddNewVehicleInputEnums field, string message);
     }

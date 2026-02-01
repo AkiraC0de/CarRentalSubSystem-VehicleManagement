@@ -69,6 +69,14 @@ namespace VehicleManagementSystem.Forms {
             }
         }
 
+        public void ClearAllInputs() {
+            foreach (KeyValuePair<AddNewVehicleInputEnums, InputFieldUI> entry in _inputFieldMap) {
+                entry.Value._TextBox.Clear();
+            }
+
+            CloseImageInput();
+        }
+
         private void ClearFieldError(InputFieldUI inputField) {
             inputField._TextBox.BorderColor = Color.FromArgb(213, 218, 223);
             inputField._errorLabel.Text = null;
@@ -180,11 +188,15 @@ namespace VehicleManagementSystem.Forms {
         }
 
         private void closeImageBtn_Click(object sender, EventArgs e) {
+            CloseImageInput();
+        }
+
+        private void CloseImageInput() {
             if (vehiclePictureBox.Image != null) {
                 vehiclePictureBox.Image.Dispose();
             }
 
-            if (_tempSelectedImagePath != null) { 
+            if (_tempSelectedImagePath != null) {
                 _tempSelectedImagePath = null;
             }
 

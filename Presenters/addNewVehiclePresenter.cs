@@ -55,6 +55,7 @@ namespace VehicleManagementSystem.Presentor {
             try {
                 _vehicleServices.AddVehicle(newVehicle);
                 _view.ShowError("ADDED");
+                _view.ClearAllInputs();
             } catch (Exception ex) {
                 _view.ShowError(ex.Message);
             }
