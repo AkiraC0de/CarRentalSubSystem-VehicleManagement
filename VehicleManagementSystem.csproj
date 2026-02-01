@@ -242,6 +242,11 @@
     <Compile Include="Models\Vehicle.cs" />
     <Compile Include="Presenters\addNewVehiclePresenter.cs" />
     <Compile Include="Presenters\vehicleManagementPresenter.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Services\Implementations\VehicleServices.cs" />
     <Compile Include="Services\Interfaces\IVehicleService.cs" />
     <Compile Include="View\Forms\frmDashboard.cs">
@@ -255,6 +260,11 @@
     </Compile>
     <Compile Include="View\Forms\frmSystemLogs.Designer.cs">
       <DependentUpon>frmSystemLogs.cs</DependentUpon>
+    <Compile Include="UserControls\VehicleCardControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\VehicleCardControl.Designer.cs">
+      <DependentUpon>VehicleCardControl.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Forms\frmUserManagement.cs">
       <SubType>Form</SubType>
@@ -294,6 +304,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Forms\frmSystemLogs.resx">
       <DependentUpon>frmSystemLogs.cs</DependentUpon>
+    <Compile Include="View\Interfaces\IVehicleManagementView.cs" />
+    <EmbeddedResource Include="UserControls\VehicleCardControl.resx">
+      <DependentUpon>VehicleCardControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Forms\frmUserManagement.resx">
       <DependentUpon>frmUserManagement.cs</DependentUpon>
@@ -312,14 +325,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -339,6 +347,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
+    <None Include="Resources\engine-icon.png" />
+    <None Include="Resources\default-car-model.png" />
     <None Include="Resources\account-circle.png" />
     <None Include="Resources\chevron-backward-icon.png" />
     <None Include="Resources\save-icon.png" />

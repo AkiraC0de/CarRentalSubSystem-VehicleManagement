@@ -1,19 +1,81 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 using VehicleManagementSystem.Classes;
+using VehicleManagementSystem.Dto;
 using VehicleManagementSystem.Presenters;
+using VehicleManagementSystem.Services.Implementations;
+using VehicleManagementSystem.UserControls;
+using VehicleManagementSystem.View.Interfaces;
 
 namespace VehicleManagementSystem.Forms {
-    public partial class frmVehicleManagement : Form {
+    public partial class frmVehicleManagement : Form, IVehicleManagementView {
 
         private vehicleManagementPresenter _presenter;
+        private Timer _searchTimer;
+
+        public string SearchQuery => searchBox.Text;
 
         public frmVehicleManagement() {
             InitializeComponent();
+            _presenter = new vehicleManagementPresenter(this, new VehicleServices());
         }
 
-        public void RenderVehicles() {
+        public void DisplayVehicles(List<VehicleDto> vehicles) {
+            tableLayoutVehicles.SuspendLayout();
 
+            tableLayoutVehicles.Controls.Clear();
+            tableLayoutVehicles.RowStyles.Clear();
+            tableLayoutVehicles.RowCount = 0;
+
+            int col = 0;
+            int row = 0;
+            int maxCols = 4;
+
+            foreach (var vehicle in vehicles) {
+                if (col == 0) {
+                    tableLayoutVehicles.RowCount++;
+                    tableLayoutVehicles.RowStyles.Add(
+                        new RowStyle(SizeType.AutoSize)
+                    );
+                }
+
+                var card = new VehicleCardControl();
+                card.Bind(vehicle);
+                card.Dock = DockStyle.Fill;
+                card.Margin = new Padding(10);
+
+                tableLayoutVehicles.Controls.Add(card, col, row);
+
+                col++;
+                if (col >= maxCols) {
+                    col = 0;
+                    row++;
+                }
+            }
+
+            tableLayoutVehicles.ResumeLayout();
+        }
+
+        public void ShowError(string message) {
+            MessageBox.Show(message, "Error");
+        }
+
+        private void frmVehicleManagement_Load(object sender, EventArgs e) {
+            _presenter.LoadAllVehicles();
+            _searchTimer = new Timer();
+            _searchTimer.Interval = 350; // 0.35 seconds
+            _searchTimer.Tick += SearchTimer_Tick;
+        }
+
+        private void searchBox_TextChanged(object sender, EventArgs e) {
+            _searchTimer.Stop();   
+            _searchTimer.Start(); 
+        }
+
+        private void SearchTimer_Tick(object sender, EventArgs e) {
+            _searchTimer.Stop(); // IMPORTANT: run only once
+            _presenter.LoadSearchedVehicle();
         }
 
         private void addNewVehBtn_Click(object sender, EventArgs e) {
@@ -30,7 +92,5 @@ namespace VehicleManagementSystem.Forms {
                 return cp;
             }
         }
-
- 
     }
 }
