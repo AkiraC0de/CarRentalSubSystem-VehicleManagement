@@ -8,6 +8,8 @@ using VehicleManagementSystem.Forms;
 using VehicleManagementSystem.Classes;
 using Guna.UI2.WinForms;
 using PL_VehicleRental.Forms;
+using Dshboard;
+using ActivityLogs;
 
 namespace VehicleManagementSystem {
 
@@ -78,11 +80,25 @@ namespace VehicleManagementSystem {
             NavigationHelper.OpenForm(new frmVehicleManagement());
         }
 
+        private void dashboardBtn_Click(object sender, EventArgs e) {
+            RemoveHeaderLabel();
+            MenuHandler.ActivateButton(sender);
+            labelPage.Text = AppConfig.Titles.Dashboard;
+            NavigationHelper.OpenForm(new DashBoardForm());
+        }
+
         private void userManagementBtn_Click(object sender, EventArgs e) {
             RemoveHeaderLabel();
             MenuHandler.ActivateButton(sender);
             labelPage.Text = AppConfig.Titles.UserManagement;
             NavigationHelper.OpenForm(new UserManagementForm());
+        }
+
+        private void activityLogsBtn_Click(object sender, EventArgs e) {
+            RemoveHeaderLabel();
+            MenuHandler.ActivateButton(sender);
+            labelPage.Text = AppConfig.Titles.ActivityLogs;
+            NavigationHelper.OpenForm(new LogsForm());
         }
 
         private void maintenanceMangementBtn_Click(object sender, EventArgs e) {
@@ -102,7 +118,6 @@ namespace VehicleManagementSystem {
             }
             base.WndProc(ref m);
         }
-
 
     }
 }

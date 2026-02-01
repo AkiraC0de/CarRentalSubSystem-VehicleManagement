@@ -91,6 +91,7 @@ namespace VehicleManagementSystem {
             this.activityLogsBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.activityLogsBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.activityLogsBtn.UseVisualStyleBackColor = false;
+            this.activityLogsBtn.Click += new System.EventHandler(this.activityLogsBtn_Click);
             // 
             // userManagementBtn
             // 
@@ -244,6 +245,7 @@ namespace VehicleManagementSystem {
             this.dashboardBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.dashboardBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.dashboardBtn.UseVisualStyleBackColor = false;
+            this.dashboardBtn.Click += new System.EventHandler(this.dashboardBtn_Click);
             // 
             // panelLogo
             // 

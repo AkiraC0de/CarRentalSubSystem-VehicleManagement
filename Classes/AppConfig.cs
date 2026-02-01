@@ -20,6 +20,8 @@ namespace VehicleManagementSystem.Classes {
             public const string VehManagement = "Vehicle Management";
             public const string MaintenanceManagement = "Maintenance Management";
             public const string UserManagement = "User Management";
+            public const string Dashboard = "Dashboard";
+            public const string ActivityLogs = "Activity Logs";
         }
 
         public static class SubTitles {
