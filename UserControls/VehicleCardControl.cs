@@ -11,42 +11,30 @@ using System.Windows.Forms;
 using VehicleManagementSystem.Classes;
 using VehicleManagementSystem.Dto;
 using VehicleManagementSystem.Models;
+using VehicleManagementSystem.View.Forms;
 
 namespace VehicleManagementSystem.UserControls {
     public partial class VehicleCardControl : UserControl {
+        VehicleDto _vehicle;
+
         public VehicleCardControl() {
             InitializeComponent();
+            this.Cursor = Cursors.Hand;
         }
 
         public void Bind(VehicleDto vehicle) {
-            LoadVehicleImage(vehicle.ImagePath);
+            _vehicle = vehicle;
 
+            pictureVehicle.Image = Helpers.GetVehicleImage(vehicle.ImagePath);
             labelMainHeader.Text = vehicle.LicensePlate;
             labelSubHader.Text = GetCardSubHeader(vehicle);
             labelDailyRate.Text = GetFormattedDialyRate(vehicle.DailyRate);
-            labelCurrentOdometer.Text = vehicle.CurrentOdometerReading.ToString() + " Km";
+            labelCurrentOdometer.Text = vehicle.CurrentOdometerReading + " Km";
             pictureBoxTransmission.Image = GetTransmissionIcon(vehicle.Transmission);
 
             labelStatus.Text = vehicle.CurrentStatus;
-            labelStatus.ForeColor = GetStatusColor(vehicle.CurrentStatus);
-        }
+            labelStatus.ForeColor = Helpers.GetStatusColor(vehicle.CurrentStatus);
 
-        private Color GetStatusColor(string status) {
-            switch (status.ToLower()) {
-                case "rented":
-                case "reserved":
-                    return Color.DeepSkyBlue;
-                    break;
-                case "inmaintenance":
-                    return Color.Orange;
-                    break;
-                case "outofservice":
-                    return Color.Red;
-                    break;
-                default:
-                    return Color.Green;
-                    break;
-            }
         }
 
         private Image GetTransmissionIcon(string transmissionType) {
@@ -64,15 +52,8 @@ namespace VehicleManagementSystem.UserControls {
             return $"₱{dailyRate}/day";
         }
 
-        private void LoadVehicleImage(string ImagePath) {
-            string fullImagePath = Path.Combine(
-                AppConfig.AppData.RootPath,
-                ImagePath
-            );
-
-            if (File.Exists(fullImagePath)) {
-                pictureVehicle.Image = Image.FromFile(fullImagePath);
-            }
+        private void Card_Click(object sender, EventArgs e) {
+            NavigationHelper.OpenForm(new frmVehicleDetails(_vehicle));
         }
     }
 }

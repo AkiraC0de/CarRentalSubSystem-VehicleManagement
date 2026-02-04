@@ -54,8 +54,8 @@ namespace VehicleManagementSystem.Presentor {
             
             try {
                 _vehicleServices.AddVehicle(newVehicle);
-                _view.ShowError("ADDED");
                 _view.ClearAllInputs();
+                _view.ShowSuccess($"Vehicle {newVehicle.Manufacturer} - {newVehicle.Model} {newVehicle.YearModel} has been successfuly added.");
             } catch (Exception ex) {
                 _view.ShowError(ex.Message);
             }

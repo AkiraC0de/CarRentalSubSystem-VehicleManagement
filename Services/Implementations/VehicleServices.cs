@@ -22,6 +22,8 @@ namespace VehicleManagementSystem.Services.Implementations {
                        OR LOWER(Manufacturer) LIKE @search
                        OR LOWER(LicensePlate) LIKE @search
                     )
+
+                    ORDER BY CreatedDate DESC
                 ";
 
                 using (MySqlCommand cmd = new MySqlCommand(sql, conn)) {
@@ -70,7 +72,7 @@ namespace VehicleManagementSystem.Services.Implementations {
             using (MySqlConnection conn = MySQLConnectionContext.Create()) {
                 conn.Open();
 
-                string sql = "SELECT * FROM Vehicles";
+                string sql = "SELECT * FROM Vehicles ORDER BY CreatedDate DESC";
 
                 using (MySqlCommand cmd = new MySqlCommand(sql, conn))
                 using (MySqlDataReader reader = cmd.ExecuteReader()) {

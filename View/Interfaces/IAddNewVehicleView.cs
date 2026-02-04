@@ -25,6 +25,7 @@ namespace VehicleManagementSystem.View.Interfaces {
 
         void ClearAllInputs();
 
+        void ShowSuccess(string message);
         void ShowError(string message);
         void SetFieldError(AddNewVehicleInputEnums field, string message);
     }

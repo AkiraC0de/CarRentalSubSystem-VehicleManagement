@@ -64,6 +64,7 @@ namespace VehicleManagementSystem.Forms {
             this.panelBasicInformation = new Guna.UI2.WinForms.Guna2Panel();
             this.tableBasicInfo = new System.Windows.Forms.TableLayoutPanel();
             this.panelBasicInfoLeft = new System.Windows.Forms.Panel();
+            this.errorLabelInputImage = new System.Windows.Forms.Label();
             this.closeImageBtn = new FontAwesome.Sharp.IconButton();
             this.addImageBtn = new Guna.UI2.WinForms.Guna2Button();
             this.label7 = new System.Windows.Forms.Label();
@@ -94,7 +95,6 @@ namespace VehicleManagementSystem.Forms {
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.errorLabelInputImage = new System.Windows.Forms.Label();
             this.panelBg.SuspendLayout();
             this.panelMain.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -538,7 +538,7 @@ namespace VehicleManagementSystem.Forms {
             this.inputPurchaseDate.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.inputPurchaseDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.inputPurchaseDate.Location = new System.Drawing.Point(36, 121);
-            this.inputPurchaseDate.MaxDate = DateTime.Now;
+            this.inputPurchaseDate.MaxDate = new System.DateTime(2026, 2, 2, 1, 16, 31, 598);
             this.inputPurchaseDate.MinDate = new System.DateTime(1925, 1, 1, 0, 0, 0, 0);
             this.inputPurchaseDate.Name = "inputPurchaseDate";
             this.inputPurchaseDate.Size = new System.Drawing.Size(482, 55);
@@ -718,6 +718,18 @@ namespace VehicleManagementSystem.Forms {
             this.panelBasicInfoLeft.Name = "panelBasicInfoLeft";
             this.panelBasicInfoLeft.Size = new System.Drawing.Size(570, 517);
             this.panelBasicInfoLeft.TabIndex = 0;
+            // 
+            // errorLabelInputImage
+            // 
+            this.errorLabelInputImage.AutoSize = true;
+            this.errorLabelInputImage.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.errorLabelInputImage.ForeColor = System.Drawing.Color.Red;
+            this.errorLabelInputImage.Location = new System.Drawing.Point(18, 482);
+            this.errorLabelInputImage.Name = "errorLabelInputImage";
+            this.errorLabelInputImage.Size = new System.Drawing.Size(75, 19);
+            this.errorLabelInputImage.TabIndex = 33;
+            this.errorLabelInputImage.Text = "Required";
+            this.errorLabelInputImage.Visible = false;
             // 
             // closeImageBtn
             // 
@@ -1216,18 +1228,6 @@ namespace VehicleManagementSystem.Forms {
             this.label8.Size = new System.Drawing.Size(398, 43);
             this.label8.TabIndex = 7;
             this.label8.Text = "Bring in a New Vehicle";
-            // 
-            // errorLabelInputImage
-            // 
-            this.errorLabelInputImage.AutoSize = true;
-            this.errorLabelInputImage.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.errorLabelInputImage.ForeColor = System.Drawing.Color.Red;
-            this.errorLabelInputImage.Location = new System.Drawing.Point(18, 482);
-            this.errorLabelInputImage.Name = "errorLabelInputImage";
-            this.errorLabelInputImage.Size = new System.Drawing.Size(75, 19);
-            this.errorLabelInputImage.TabIndex = 33;
-            this.errorLabelInputImage.Text = "Required";
-            this.errorLabelInputImage.Visible = false;
             // 
             // frmAddNewVehicle
             // 

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
 using System.IO.Packaging;
 using System.Linq;
@@ -8,6 +9,33 @@ using System.Threading.Tasks;
 
 namespace VehicleManagementSystem.Classes {
     public static class Helpers {
+
+        public static Color GetStatusColor(string status) {
+            switch (status.ToLower()) {
+                case "rented":
+                case "reserved":
+                    return Color.DeepSkyBlue;
+                case "inmaintenance":
+                    return Color.Orange;
+                case "outofservice":
+                    return Color.Red;
+                default:
+                    return Color.Green;
+            }
+        }
+
+        public static Image GetVehicleImage(string ImagePath) {
+            string fullImagePath = Path.Combine(
+                AppConfig.AppData.RootPath,
+                ImagePath
+            );
+
+            if (File.Exists(fullImagePath)) {
+                return Image.FromFile(fullImagePath);
+            }
+
+            return global::VehicleManagementSystem.Properties.Resources.default_car_model;
+        }
 
         static public string SaveImageToAppData(string sourceImagePath, string subFolder) {
             string targetPath = Path.Combine(

@@ -52,6 +52,10 @@ namespace VehicleManagementSystem.Forms {
             MessageBox.Show(message, "Error");
         }
 
+        public void ShowSuccess(string message) {
+            MessageBox.Show(message, "Success!");
+        }
+
         public void SetFieldError(AddNewVehicleInputEnums field, string message) {
             if (field == AddNewVehicleInputEnums.VehicleImage) {
                 errorLabelInputImage.Text = message;
