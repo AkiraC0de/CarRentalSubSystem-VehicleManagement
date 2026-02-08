@@ -29,7 +29,12 @@
         private void InitializeComponent()
         {
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.progressBar = new Guna.UI2.WinForms.Guna2ProgressBar();
             this.lblStatus = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.exitBtn = new Guna.UI2.WinForms.Guna2Button();
             this.label2 = new System.Windows.Forms.Label();
             this.userImage = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.lblRole = new System.Windows.Forms.Label();
@@ -38,11 +43,7 @@
             this.txtFullName = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtUserName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.exitBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.progressBar = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.imageLabel = new System.Windows.Forms.Label();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userImage)).BeginInit();
             this.SuspendLayout();
@@ -51,6 +52,7 @@
             // 
             this.guna2GradientPanel1.BorderColor = System.Drawing.Color.Silver;
             this.guna2GradientPanel1.BorderThickness = 2;
+            this.guna2GradientPanel1.Controls.Add(this.imageLabel);
             this.guna2GradientPanel1.Controls.Add(this.progressBar);
             this.guna2GradientPanel1.Controls.Add(this.lblStatus);
             this.guna2GradientPanel1.Controls.Add(this.label5);
@@ -73,6 +75,18 @@
             this.guna2GradientPanel1.TabIndex = 0;
             this.guna2GradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2GradientPanel1_Paint);
             // 
+            // progressBar
+            // 
+            this.progressBar.Location = new System.Drawing.Point(0, 0);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.progressBar.Size = new System.Drawing.Size(468, 14);
+            this.progressBar.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
+            this.progressBar.TabIndex = 13;
+            this.progressBar.Text = "guna2ProgressBar1";
+            this.progressBar.TextMode = Guna.UI2.WinForms.Enums.ProgressBarTextMode.Value;
+            this.progressBar.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            // 
             // lblStatus
             // 
             this.lblStatus.AutoSize = true;
@@ -85,6 +99,53 @@
             this.lblStatus.Text = "label2";
             this.lblStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblStatus.Click += new System.EventHandler(this.lblStatus_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Location = new System.Drawing.Point(250, 210);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(68, 16);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Full Name";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Location = new System.Drawing.Point(31, 295);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(58, 16);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Address";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Location = new System.Drawing.Point(31, 209);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(70, 16);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Username";
+            // 
+            // exitBtn
+            // 
+            this.exitBtn.BorderThickness = 2;
+            this.exitBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.exitBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.exitBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.exitBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.exitBtn.FillColor = System.Drawing.Color.Transparent;
+            this.exitBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.exitBtn.ForeColor = System.Drawing.Color.Black;
+            this.exitBtn.Location = new System.Drawing.Point(422, 2);
+            this.exitBtn.Name = "exitBtn";
+            this.exitBtn.Size = new System.Drawing.Size(45, 34);
+            this.exitBtn.TabIndex = 9;
+            this.exitBtn.Text = "X";
+            this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
             // 
             // label2
             // 
@@ -205,64 +266,18 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "User Information";
             // 
-            // exitBtn
+            // imageLabel
             // 
-            this.exitBtn.BorderThickness = 2;
-            this.exitBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.exitBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.exitBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.exitBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.exitBtn.FillColor = System.Drawing.Color.Transparent;
-            this.exitBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.exitBtn.ForeColor = System.Drawing.Color.Black;
-            this.exitBtn.Location = new System.Drawing.Point(422, 2);
-            this.exitBtn.Name = "exitBtn";
-            this.exitBtn.Size = new System.Drawing.Size(45, 34);
-            this.exitBtn.TabIndex = 9;
-            this.exitBtn.Text = "X";
-            this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(31, 209);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 16);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Username";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(31, 295);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 16);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Address";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(250, 210);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 16);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Full Name";
-            // 
-            // progressBar
-            // 
-            this.progressBar.Location = new System.Drawing.Point(0, 0);
-            this.progressBar.Name = "progressBar";
-            this.progressBar.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.progressBar.Size = new System.Drawing.Size(468, 14);
-            this.progressBar.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
-            this.progressBar.TabIndex = 13;
-            this.progressBar.Text = "guna2ProgressBar1";
-            this.progressBar.TextMode = Guna.UI2.WinForms.Enums.ProgressBarTextMode.Value;
-            this.progressBar.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.imageLabel.AutoSize = true;
+            this.imageLabel.BackColor = System.Drawing.Color.Gray;
+            this.imageLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.imageLabel.ForeColor = System.Drawing.SystemColors.Control;
+            this.imageLabel.Location = new System.Drawing.Point(203, 105);
+            this.imageLabel.Name = "imageLabel";
+            this.imageLabel.Size = new System.Drawing.Size(63, 25);
+            this.imageLabel.TabIndex = 14;
+            this.imageLabel.Text = "Image";
+            this.imageLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmInfo
             // 
@@ -299,5 +314,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2ProgressBar progressBar;
+        private System.Windows.Forms.Label imageLabel;
     }
 }

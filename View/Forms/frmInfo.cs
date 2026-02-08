@@ -78,13 +78,16 @@ namespace PL_VehicleRental.Forms
                     if (!await reader.ReadAsync()) 
                         return null;
 
+                    string dbStatus = reader.GetString("status");
+                    _userStatus = ParseStatus(dbStatus);
+
                     return new UserInfoDto
                     {
                         Id = reader.GetInt32("id"),
                         UserName = reader.GetString("userName"),
                         FullName = reader.GetString("fullName"),
                         Address = reader.GetString("address"),
-                        Status = reader.GetString("status"),
+                        Status = dbStatus,
                         Role = reader.GetString("role")
                     };
                 }
@@ -116,6 +119,11 @@ namespace PL_VehicleRental.Forms
                 default:
                     return Color.Black;
             }
+        }
+
+        private UserStatus ParseStatus(string dbStatus)
+        {
+            return Enum.TryParse(dbStatus, true, out UserStatus status) ? status : UserStatus.Inactive;
         }
 
         private void SetUserStatus(Label lblStatus, UserStatus status)
