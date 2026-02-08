@@ -27,11 +27,12 @@ namespace VehicleManagementSystem.View.Forms {
         private void InitializeComponent() {
             this.panelBg = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.panelMain = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.panelSubMain = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
+            this.panelNav = new Guna.UI2.WinForms.Guna2Panel();
+            this.overviewBtn = new Guna.UI2.WinForms.Guna2Button();
             this.maintenanceBtn = new Guna.UI2.WinForms.Guna2Button();
             this.documentsBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.overviewBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.hr = new Guna.UI2.WinForms.Guna2Panel();
+            this.panelSubMain = new Guna.UI2.WinForms.Guna2Panel();
             this.labelStatus = new Guna.UI2.WinForms.Guna2TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -39,7 +40,6 @@ namespace VehicleManagementSystem.View.Forms {
             this.labelSubHeader = new System.Windows.Forms.Label();
             this.mySqlCommand1 = new MySqlConnector.MySqlCommand();
             this.mySqlCommand2 = new MySqlConnector.MySqlCommand();
-            this.panelNav = new Guna.UI2.WinForms.Guna2Panel();
             this.panelBg.SuspendLayout();
             this.panelMain.SuspendLayout();
             this.panelNav.SuspendLayout();
@@ -69,8 +69,8 @@ namespace VehicleManagementSystem.View.Forms {
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelMain.AutoScroll = true;
             this.panelMain.Controls.Add(this.panelNav);
+            this.panelMain.Controls.Add(this.hr);
             this.panelMain.Controls.Add(this.panelSubMain);
-            this.panelMain.Controls.Add(this.guna2Panel9);
             this.panelMain.Controls.Add(this.labelStatus);
             this.panelMain.Controls.Add(this.label20);
             this.panelMain.Controls.Add(this.label3);
@@ -88,26 +88,34 @@ namespace VehicleManagementSystem.View.Forms {
             this.panelMain.Size = new System.Drawing.Size(1249, 685);
             this.panelMain.TabIndex = 1;
             // 
-            // panelSubMain
+            // panelNav
             // 
-            this.panelSubMain.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelSubMain.Location = new System.Drawing.Point(14, 114);
-            this.panelSubMain.Name = "panelSubMain";
-            this.panelSubMain.Size = new System.Drawing.Size(1205, 658);
-            this.panelSubMain.TabIndex = 33;
+            this.panelNav.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelNav.BackColor = System.Drawing.Color.Transparent;
+            this.panelNav.Controls.Add(this.overviewBtn);
+            this.panelNav.Controls.Add(this.maintenanceBtn);
+            this.panelNav.Controls.Add(this.documentsBtn);
+            this.panelNav.Location = new System.Drawing.Point(666, 28);
+            this.panelNav.Name = "panelNav";
+            this.panelNav.Size = new System.Drawing.Size(553, 76);
+            this.panelNav.TabIndex = 34;
             // 
-            // guna2Panel9
+            // overviewBtn
             // 
-            this.guna2Panel9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Panel9.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Panel9.BorderRadius = 2;
-            this.guna2Panel9.FillColor = System.Drawing.Color.LightGray;
-            this.guna2Panel9.Location = new System.Drawing.Point(14, 103);
-            this.guna2Panel9.Name = "guna2Panel9";
-            this.guna2Panel9.Size = new System.Drawing.Size(1205, 5);
-            this.guna2Panel9.TabIndex = 32;
+            this.overviewBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.overviewBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.overviewBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.overviewBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.overviewBtn.Dock = System.Windows.Forms.DockStyle.Right;
+            this.overviewBtn.FillColor = System.Drawing.Color.Transparent;
+            this.overviewBtn.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.overviewBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.overviewBtn.Location = new System.Drawing.Point(9, 0);
+            this.overviewBtn.Name = "overviewBtn";
+            this.overviewBtn.Size = new System.Drawing.Size(179, 76);
+            this.overviewBtn.TabIndex = 3;
+            this.overviewBtn.Text = "Overview";
+            this.overviewBtn.Click += new System.EventHandler(this.overviewBtn_Click);
             // 
             // maintenanceBtn
             // 
@@ -123,7 +131,7 @@ namespace VehicleManagementSystem.View.Forms {
             this.maintenanceBtn.Name = "maintenanceBtn";
             this.maintenanceBtn.Size = new System.Drawing.Size(179, 76);
             this.maintenanceBtn.TabIndex = 4;
-            this.maintenanceBtn.Text = "MAINTENANCE";
+            this.maintenanceBtn.Text = "Maintenance";
             this.maintenanceBtn.Click += new System.EventHandler(this.maintenanceBtn_Click);
             // 
             // documentsBtn
@@ -140,34 +148,37 @@ namespace VehicleManagementSystem.View.Forms {
             this.documentsBtn.Name = "documentsBtn";
             this.documentsBtn.Size = new System.Drawing.Size(186, 76);
             this.documentsBtn.TabIndex = 4;
-            this.documentsBtn.Text = "DOCUMENTS";
+            this.documentsBtn.Text = "Documents";
             this.documentsBtn.Click += new System.EventHandler(this.documentsBtn_Click);
             // 
-            // overviewBtn
+            // hr
             // 
-            this.overviewBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.overviewBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.overviewBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.overviewBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.overviewBtn.Dock = System.Windows.Forms.DockStyle.Right;
-            this.overviewBtn.FillColor = System.Drawing.Color.Transparent;
-            this.overviewBtn.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.overviewBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.overviewBtn.Location = new System.Drawing.Point(9, 0);
-            this.overviewBtn.Name = "overviewBtn";
-            this.overviewBtn.Size = new System.Drawing.Size(179, 76);
-            this.overviewBtn.TabIndex = 3;
-            this.overviewBtn.Text = "OVERVIEW";
-            this.overviewBtn.Click += new System.EventHandler(this.overviewBtn_Click);
+            this.hr.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.hr.BackColor = System.Drawing.Color.Transparent;
+            this.hr.BorderRadius = 2;
+            this.hr.FillColor = System.Drawing.Color.LightGray;
+            this.hr.Location = new System.Drawing.Point(14, 103);
+            this.hr.Margin = new System.Windows.Forms.Padding(0);
+            this.hr.Name = "hr";
+            this.hr.Size = new System.Drawing.Size(1205, 5);
+            this.hr.TabIndex = 32;
+            // 
+            // panelSubMain
+            // 
+            this.panelSubMain.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelSubMain.Location = new System.Drawing.Point(14, 114);
+            this.panelSubMain.Name = "panelSubMain";
+            this.panelSubMain.Size = new System.Drawing.Size(1206, 658);
+            this.panelSubMain.TabIndex = 33;
             // 
             // labelStatus
             // 
-            this.labelStatus.AutoSize = true;
-            this.labelStatus.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.labelStatus.BackColor = System.Drawing.Color.Transparent;
-            this.labelStatus.BorderRadius = 15;
+            this.labelStatus.BorderRadius = 20;
             this.labelStatus.BorderThickness = 0;
-            this.labelStatus.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.labelStatus.Cursor = System.Windows.Forms.Cursors.Default;
             this.labelStatus.DefaultText = "inMaintenance";
             this.labelStatus.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.labelStatus.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -175,10 +186,10 @@ namespace VehicleManagementSystem.View.Forms {
             this.labelStatus.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.labelStatus.FillColor = System.Drawing.Color.Thistle;
             this.labelStatus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.labelStatus.Font = new System.Drawing.Font("Arial", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelStatus.Font = new System.Drawing.Font("Arial", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelStatus.ForeColor = System.Drawing.Color.White;
             this.labelStatus.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.labelStatus.Location = new System.Drawing.Point(254, 20);
+            this.labelStatus.Location = new System.Drawing.Point(188, 20);
             this.labelStatus.Margin = new System.Windows.Forms.Padding(4, 8, 4, 8);
             this.labelStatus.Name = "labelStatus";
             this.labelStatus.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -186,7 +197,7 @@ namespace VehicleManagementSystem.View.Forms {
             this.labelStatus.PlaceholderText = "";
             this.labelStatus.ReadOnly = true;
             this.labelStatus.SelectedText = "";
-            this.labelStatus.Size = new System.Drawing.Size(162, 44);
+            this.labelStatus.Size = new System.Drawing.Size(135, 44);
             this.labelStatus.TabIndex = 21;
             this.labelStatus.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.labelStatus.WordWrap = false;
@@ -262,18 +273,6 @@ namespace VehicleManagementSystem.View.Forms {
             this.mySqlCommand2.Transaction = null;
             this.mySqlCommand2.UpdatedRowSource = System.Data.UpdateRowSource.None;
             // 
-            // panelNav
-            // 
-            this.panelNav.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelNav.BackColor = System.Drawing.Color.Transparent;
-            this.panelNav.Controls.Add(this.overviewBtn);
-            this.panelNav.Controls.Add(this.maintenanceBtn);
-            this.panelNav.Controls.Add(this.documentsBtn);
-            this.panelNav.Location = new System.Drawing.Point(666, 27);
-            this.panelNav.Name = "panelNav";
-            this.panelNav.Size = new System.Drawing.Size(553, 76);
-            this.panelNav.TabIndex = 34;
-            // 
             // frmVehicleDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -297,7 +296,7 @@ namespace VehicleManagementSystem.View.Forms {
         private MySqlConnector.MySqlCommand mySqlCommand1;
         private MySqlConnector.MySqlCommand mySqlCommand2;
         private Guna.UI2.WinForms.Guna2GradientPanel panelMain;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel9;
+        private Guna.UI2.WinForms.Guna2Panel hr;
         private Guna.UI2.WinForms.Guna2Button maintenanceBtn;
         private Guna.UI2.WinForms.Guna2Button documentsBtn;
         private Guna.UI2.WinForms.Guna2Button overviewBtn;
