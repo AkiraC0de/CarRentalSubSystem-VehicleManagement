@@ -14,12 +14,14 @@ namespace VehicleManagementSystem.Forms {
             InitializeComponent();
         }
 
-        private void guna2Panel1_Paint(object sender, PaintEventArgs e) {
-
-        }
-
-        private void MaintenanceManagement_Load(object sender, EventArgs e) {
-
+        // Automatically add Double Buffering to the whole form
+        // Boilerplate From Stackoverflow
+        protected override CreateParams CreateParams {
+            get {
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000;
+                return cp;
+            }
         }
     }
 }
