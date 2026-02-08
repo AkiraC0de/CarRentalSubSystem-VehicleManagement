@@ -103,6 +103,16 @@ namespace VehicleManagementSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap car_engine {
+            get {
+                object obj = ResourceManager.GetObject("car-engine", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap car_gear_icon {
             get {
                 object obj = ResourceManager.GetObject("car-gear-icon", resourceCulture);
@@ -136,6 +146,26 @@ namespace VehicleManagementSystem.Properties {
         internal static System.Drawing.Bitmap engine_icon {
             get {
                 object obj = ResourceManager.GetObject("engine-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gas_station {
+            get {
+                object obj = ResourceManager.GetObject("gas-station", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gear_box {
+            get {
+                object obj = ResourceManager.GetObject("gear-box", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

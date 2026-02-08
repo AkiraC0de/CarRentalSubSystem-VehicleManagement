@@ -28,11 +28,34 @@ namespace VehicleManagementSystem.View.Forms {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmVehicleDetails));
             this.labelSubHeader = new System.Windows.Forms.Label();
             this.panelMain = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.labelStatus = new Guna.UI2.WinForms.Guna2TextBox();
             this.tableBottom = new System.Windows.Forms.TableLayoutPanel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
+            this.tableVehicleInformation = new System.Windows.Forms.TableLayoutPanel();
+            this.inputPurchasePrice = new Guna.UI2.WinForms.Guna2TextBox();
+            this.inputYearModel = new Guna.UI2.WinForms.Guna2TextBox();
+            this.inputModel = new Guna.UI2.WinForms.Guna2TextBox();
+            this.inputSeatingCap = new Guna.UI2.WinForms.Guna2TextBox();
+            this.inputManufacturer = new Guna.UI2.WinForms.Guna2TextBox();
+            this.inputColor = new Guna.UI2.WinForms.Guna2TextBox();
+            this.inputPlateNum = new Guna.UI2.WinForms.Guna2TextBox();
+            this.inputCategory = new Guna.UI2.WinForms.Guna2TextBox();
+            this.inputVehicleIdentification = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.inputPurchaseDate = new System.Windows.Forms.DateTimePicker();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.viewRenterBtn = new Guna.UI2.WinForms.Guna2Button();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
@@ -64,46 +87,30 @@ namespace VehicleManagementSystem.View.Forms {
             this.labelTireFrontLeft = new System.Windows.Forms.Label();
             this.pictureVehicle = new Guna.UI2.WinForms.Guna2PictureBox();
             this.panelTopRight = new Guna.UI2.WinForms.Guna2Panel();
-            this.progressBreakCondition = new Guna.UI2.WinForms.Guna2CircleProgressBar();
-            this.label11 = new System.Windows.Forms.Label();
+            this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.inputFuelType = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.inputOdomter = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.progressTillChangeOil = new Guna.UI2.WinForms.Guna2CircleProgressBar();
             this.label10 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.progressFuelTank = new Guna.UI2.WinForms.Guna2CircleProgressBar();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.labelStatus = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.backBtn = new Guna.UI2.WinForms.Guna2CircleButton();
             this.panelBg = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.mySqlCommand1 = new MySqlConnector.MySqlCommand();
             this.mySqlCommand2 = new MySqlConnector.MySqlCommand();
-            this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
-            this.tableVehicleInformation = new System.Windows.Forms.TableLayoutPanel();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.inputVehicleIdentification = new Guna.UI2.WinForms.Guna2TextBox();
-            this.inputCategory = new Guna.UI2.WinForms.Guna2TextBox();
-            this.inputPlateNum = new Guna.UI2.WinForms.Guna2TextBox();
-            this.inputColor = new Guna.UI2.WinForms.Guna2TextBox();
-            this.inputManufacturer = new Guna.UI2.WinForms.Guna2TextBox();
-            this.inputSeatingCap = new Guna.UI2.WinForms.Guna2TextBox();
-            this.inputModel = new Guna.UI2.WinForms.Guna2TextBox();
-            this.inputYearModel = new Guna.UI2.WinForms.Guna2TextBox();
-            this.inputPurchasePrice = new Guna.UI2.WinForms.Guna2TextBox();
-            this.inputPurchaseDate = new System.Windows.Forms.DateTimePicker();
+            this.label9 = new System.Windows.Forms.Label();
+            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.inputTransmissionType = new Guna.UI2.WinForms.Guna2ComboBox();
             this.panelMain.SuspendLayout();
             this.tableBottom.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
+            this.tableVehicleInformation.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.tableTop.SuspendLayout();
@@ -115,11 +122,14 @@ namespace VehicleManagementSystem.View.Forms {
             ((System.ComponentModel.ISupportInitialize)(this.iconTireFrontLeft)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureVehicle)).BeginInit();
             this.panelTopRight.SuspendLayout();
-            this.progressBreakCondition.SuspendLayout();
+            this.guna2GradientPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
+            this.guna2GradientPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.progressTillChangeOil.SuspendLayout();
-            this.progressFuelTank.SuspendLayout();
             this.panelBg.SuspendLayout();
-            this.tableVehicleInformation.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
+            this.guna2GradientPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelSubHeader
@@ -127,7 +137,7 @@ namespace VehicleManagementSystem.View.Forms {
             this.labelSubHeader.AutoSize = true;
             this.labelSubHeader.BackColor = System.Drawing.Color.Transparent;
             this.labelSubHeader.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSubHeader.Location = new System.Drawing.Point(85, 26);
+            this.labelSubHeader.Location = new System.Drawing.Point(74, 27);
             this.labelSubHeader.Name = "labelSubHeader";
             this.labelSubHeader.Size = new System.Drawing.Size(119, 37);
             this.labelSubHeader.TabIndex = 0;
@@ -139,11 +149,11 @@ namespace VehicleManagementSystem.View.Forms {
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelMain.AutoScroll = true;
+            this.panelMain.Controls.Add(this.labelStatus);
             this.panelMain.Controls.Add(this.tableBottom);
             this.panelMain.Controls.Add(this.label20);
             this.panelMain.Controls.Add(this.panel1);
             this.panelMain.Controls.Add(this.tableTop);
-            this.panelMain.Controls.Add(this.labelStatus);
             this.panelMain.Controls.Add(this.label3);
             this.panelMain.Controls.Add(this.backBtn);
             this.panelMain.Controls.Add(this.labelSubHeader);
@@ -159,6 +169,37 @@ namespace VehicleManagementSystem.View.Forms {
             this.panelMain.Size = new System.Drawing.Size(1249, 680);
             this.panelMain.TabIndex = 1;
             // 
+            // labelStatus
+            // 
+            this.labelStatus.AutoSize = true;
+            this.labelStatus.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.labelStatus.BackColor = System.Drawing.Color.Transparent;
+            this.labelStatus.BorderRadius = 15;
+            this.labelStatus.BorderThickness = 0;
+            this.labelStatus.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.labelStatus.DefaultText = "inMaintenance";
+            this.labelStatus.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.labelStatus.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.labelStatus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.labelStatus.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.labelStatus.FillColor = System.Drawing.Color.Thistle;
+            this.labelStatus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.labelStatus.Font = new System.Drawing.Font("Arial", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelStatus.ForeColor = System.Drawing.Color.White;
+            this.labelStatus.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.labelStatus.Location = new System.Drawing.Point(193, 18);
+            this.labelStatus.Margin = new System.Windows.Forms.Padding(4, 8, 4, 8);
+            this.labelStatus.Name = "labelStatus";
+            this.labelStatus.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.labelStatus.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.labelStatus.PlaceholderText = "";
+            this.labelStatus.ReadOnly = true;
+            this.labelStatus.SelectedText = "";
+            this.labelStatus.Size = new System.Drawing.Size(162, 44);
+            this.labelStatus.TabIndex = 21;
+            this.labelStatus.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.labelStatus.WordWrap = false;
+            // 
             // tableBottom
             // 
             this.tableBottom.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -170,7 +211,7 @@ namespace VehicleManagementSystem.View.Forms {
             this.tableBottom.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.82481F));
             this.tableBottom.Controls.Add(this.guna2Panel3, 1, 0);
             this.tableBottom.Controls.Add(this.guna2Panel2, 0, 0);
-            this.tableBottom.Location = new System.Drawing.Point(13, 695);
+            this.tableBottom.Location = new System.Drawing.Point(13, 782);
             this.tableBottom.Name = "tableBottom";
             this.tableBottom.RowCount = 1;
             this.tableBottom.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -192,12 +233,401 @@ namespace VehicleManagementSystem.View.Forms {
             this.guna2Panel3.Size = new System.Drawing.Size(742, 359);
             this.guna2Panel3.TabIndex = 1;
             // 
+            // tableVehicleInformation
+            // 
+            this.tableVehicleInformation.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableVehicleInformation.ColumnCount = 4;
+            this.tableVehicleInformation.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 171F));
+            this.tableVehicleInformation.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.00001F));
+            this.tableVehicleInformation.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 188F));
+            this.tableVehicleInformation.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableVehicleInformation.Controls.Add(this.inputPurchasePrice, 3, 4);
+            this.tableVehicleInformation.Controls.Add(this.inputYearModel, 1, 4);
+            this.tableVehicleInformation.Controls.Add(this.inputModel, 1, 3);
+            this.tableVehicleInformation.Controls.Add(this.inputSeatingCap, 3, 2);
+            this.tableVehicleInformation.Controls.Add(this.inputManufacturer, 1, 2);
+            this.tableVehicleInformation.Controls.Add(this.inputColor, 3, 1);
+            this.tableVehicleInformation.Controls.Add(this.inputPlateNum, 1, 1);
+            this.tableVehicleInformation.Controls.Add(this.inputCategory, 3, 0);
+            this.tableVehicleInformation.Controls.Add(this.inputVehicleIdentification, 1, 0);
+            this.tableVehicleInformation.Controls.Add(this.label52, 2, 4);
+            this.tableVehicleInformation.Controls.Add(this.label50, 0, 4);
+            this.tableVehicleInformation.Controls.Add(this.label48, 2, 3);
+            this.tableVehicleInformation.Controls.Add(this.label46, 0, 3);
+            this.tableVehicleInformation.Controls.Add(this.label44, 2, 2);
+            this.tableVehicleInformation.Controls.Add(this.label42, 0, 2);
+            this.tableVehicleInformation.Controls.Add(this.label40, 2, 1);
+            this.tableVehicleInformation.Controls.Add(this.label38, 0, 1);
+            this.tableVehicleInformation.Controls.Add(this.label36, 2, 0);
+            this.tableVehicleInformation.Controls.Add(this.label16, 0, 0);
+            this.tableVehicleInformation.Controls.Add(this.inputPurchaseDate, 3, 3);
+            this.tableVehicleInformation.Location = new System.Drawing.Point(37, 76);
+            this.tableVehicleInformation.Name = "tableVehicleInformation";
+            this.tableVehicleInformation.RowCount = 5;
+            this.tableVehicleInformation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableVehicleInformation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableVehicleInformation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableVehicleInformation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableVehicleInformation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableVehicleInformation.Size = new System.Drawing.Size(666, 260);
+            this.tableVehicleInformation.TabIndex = 39;
+            // 
+            // inputPurchasePrice
+            // 
+            this.inputPurchasePrice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.inputPurchasePrice.BorderThickness = 0;
+            this.inputPurchasePrice.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.inputPurchasePrice.DefaultText = "";
+            this.inputPurchasePrice.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.inputPurchasePrice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.inputPurchasePrice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.inputPurchasePrice.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.inputPurchasePrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.inputPurchasePrice.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputPurchasePrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputPurchasePrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.inputPurchasePrice.Location = new System.Drawing.Point(517, 214);
+            this.inputPurchasePrice.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.inputPurchasePrice.Name = "inputPurchasePrice";
+            this.inputPurchasePrice.PlaceholderText = "";
+            this.inputPurchasePrice.ReadOnly = true;
+            this.inputPurchasePrice.SelectedText = "";
+            this.inputPurchasePrice.Size = new System.Drawing.Size(144, 40);
+            this.inputPurchasePrice.TabIndex = 47;
+            // 
+            // inputYearModel
+            // 
+            this.inputYearModel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.inputYearModel.BorderThickness = 0;
+            this.inputYearModel.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.inputYearModel.DefaultText = "";
+            this.inputYearModel.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.inputYearModel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.inputYearModel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.inputYearModel.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.inputYearModel.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.inputYearModel.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputYearModel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputYearModel.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.inputYearModel.Location = new System.Drawing.Point(176, 214);
+            this.inputYearModel.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.inputYearModel.Name = "inputYearModel";
+            this.inputYearModel.PlaceholderText = "";
+            this.inputYearModel.ReadOnly = true;
+            this.inputYearModel.SelectedText = "";
+            this.inputYearModel.Size = new System.Drawing.Size(143, 40);
+            this.inputYearModel.TabIndex = 46;
+            // 
+            // inputModel
+            // 
+            this.inputModel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.inputModel.BorderThickness = 0;
+            this.inputModel.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.inputModel.DefaultText = "";
+            this.inputModel.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.inputModel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.inputModel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.inputModel.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.inputModel.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.inputModel.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputModel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputModel.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.inputModel.Location = new System.Drawing.Point(176, 162);
+            this.inputModel.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.inputModel.Name = "inputModel";
+            this.inputModel.PlaceholderText = "";
+            this.inputModel.ReadOnly = true;
+            this.inputModel.SelectedText = "";
+            this.inputModel.Size = new System.Drawing.Size(143, 40);
+            this.inputModel.TabIndex = 44;
+            // 
+            // inputSeatingCap
+            // 
+            this.inputSeatingCap.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.inputSeatingCap.BorderThickness = 0;
+            this.inputSeatingCap.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.inputSeatingCap.DefaultText = "";
+            this.inputSeatingCap.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.inputSeatingCap.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.inputSeatingCap.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.inputSeatingCap.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.inputSeatingCap.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.inputSeatingCap.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputSeatingCap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputSeatingCap.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.inputSeatingCap.Location = new System.Drawing.Point(517, 110);
+            this.inputSeatingCap.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.inputSeatingCap.Name = "inputSeatingCap";
+            this.inputSeatingCap.PlaceholderText = "";
+            this.inputSeatingCap.ReadOnly = true;
+            this.inputSeatingCap.SelectedText = "";
+            this.inputSeatingCap.Size = new System.Drawing.Size(144, 40);
+            this.inputSeatingCap.TabIndex = 43;
+            // 
+            // inputManufacturer
+            // 
+            this.inputManufacturer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.inputManufacturer.BorderThickness = 0;
+            this.inputManufacturer.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.inputManufacturer.DefaultText = "";
+            this.inputManufacturer.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.inputManufacturer.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.inputManufacturer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.inputManufacturer.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.inputManufacturer.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.inputManufacturer.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputManufacturer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputManufacturer.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.inputManufacturer.Location = new System.Drawing.Point(176, 110);
+            this.inputManufacturer.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.inputManufacturer.Name = "inputManufacturer";
+            this.inputManufacturer.PlaceholderText = "";
+            this.inputManufacturer.ReadOnly = true;
+            this.inputManufacturer.SelectedText = "";
+            this.inputManufacturer.Size = new System.Drawing.Size(143, 40);
+            this.inputManufacturer.TabIndex = 42;
+            // 
+            // inputColor
+            // 
+            this.inputColor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.inputColor.BorderThickness = 0;
+            this.inputColor.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.inputColor.DefaultText = "";
+            this.inputColor.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.inputColor.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.inputColor.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.inputColor.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.inputColor.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.inputColor.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputColor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputColor.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.inputColor.Location = new System.Drawing.Point(517, 58);
+            this.inputColor.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.inputColor.Name = "inputColor";
+            this.inputColor.PlaceholderText = "";
+            this.inputColor.ReadOnly = true;
+            this.inputColor.SelectedText = "";
+            this.inputColor.Size = new System.Drawing.Size(144, 40);
+            this.inputColor.TabIndex = 41;
+            // 
+            // inputPlateNum
+            // 
+            this.inputPlateNum.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.inputPlateNum.BorderThickness = 0;
+            this.inputPlateNum.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.inputPlateNum.DefaultText = "";
+            this.inputPlateNum.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.inputPlateNum.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.inputPlateNum.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.inputPlateNum.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.inputPlateNum.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.inputPlateNum.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputPlateNum.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputPlateNum.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.inputPlateNum.Location = new System.Drawing.Point(176, 58);
+            this.inputPlateNum.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.inputPlateNum.Name = "inputPlateNum";
+            this.inputPlateNum.PlaceholderText = "";
+            this.inputPlateNum.ReadOnly = true;
+            this.inputPlateNum.SelectedText = "";
+            this.inputPlateNum.Size = new System.Drawing.Size(143, 40);
+            this.inputPlateNum.TabIndex = 40;
+            // 
+            // inputCategory
+            // 
+            this.inputCategory.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.inputCategory.BorderThickness = 0;
+            this.inputCategory.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.inputCategory.DefaultText = "";
+            this.inputCategory.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.inputCategory.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.inputCategory.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.inputCategory.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.inputCategory.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.inputCategory.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputCategory.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.inputCategory.Location = new System.Drawing.Point(517, 6);
+            this.inputCategory.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.inputCategory.Name = "inputCategory";
+            this.inputCategory.PlaceholderText = "";
+            this.inputCategory.ReadOnly = true;
+            this.inputCategory.SelectedText = "";
+            this.inputCategory.Size = new System.Drawing.Size(144, 40);
+            this.inputCategory.TabIndex = 39;
+            // 
+            // inputVehicleIdentification
+            // 
+            this.inputVehicleIdentification.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.inputVehicleIdentification.BorderThickness = 0;
+            this.inputVehicleIdentification.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.inputVehicleIdentification.DefaultText = "";
+            this.inputVehicleIdentification.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.inputVehicleIdentification.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.inputVehicleIdentification.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.inputVehicleIdentification.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.inputVehicleIdentification.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.inputVehicleIdentification.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputVehicleIdentification.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputVehicleIdentification.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.inputVehicleIdentification.Location = new System.Drawing.Point(175, 8);
+            this.inputVehicleIdentification.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.inputVehicleIdentification.Name = "inputVehicleIdentification";
+            this.inputVehicleIdentification.PlaceholderText = "";
+            this.inputVehicleIdentification.ReadOnly = true;
+            this.inputVehicleIdentification.SelectedText = "";
+            this.inputVehicleIdentification.Size = new System.Drawing.Size(145, 36);
+            this.inputVehicleIdentification.TabIndex = 38;
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label52.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.ForeColor = System.Drawing.Color.DarkGray;
+            this.label52.Location = new System.Drawing.Point(327, 208);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(182, 52);
+            this.label52.TabIndex = 36;
+            this.label52.Text = "Purchase Price";
+            this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label50.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.ForeColor = System.Drawing.Color.DarkGray;
+            this.label50.Location = new System.Drawing.Point(3, 208);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(165, 52);
+            this.label50.TabIndex = 34;
+            this.label50.Text = "Year Model";
+            this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label48.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.ForeColor = System.Drawing.Color.DarkGray;
+            this.label48.Location = new System.Drawing.Point(327, 156);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(182, 52);
+            this.label48.TabIndex = 32;
+            this.label48.Text = "Purchase Date";
+            this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label46.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.ForeColor = System.Drawing.Color.DarkGray;
+            this.label46.Location = new System.Drawing.Point(3, 156);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(165, 52);
+            this.label46.TabIndex = 30;
+            this.label46.Text = "Model";
+            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label44.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.ForeColor = System.Drawing.Color.DarkGray;
+            this.label44.Location = new System.Drawing.Point(327, 104);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(182, 52);
+            this.label44.TabIndex = 28;
+            this.label44.Text = "Seating Cap,";
+            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label42.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.ForeColor = System.Drawing.Color.DarkGray;
+            this.label42.Location = new System.Drawing.Point(3, 104);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(165, 52);
+            this.label42.TabIndex = 26;
+            this.label42.Text = "Manufacturer";
+            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label40.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.ForeColor = System.Drawing.Color.DarkGray;
+            this.label40.Location = new System.Drawing.Point(327, 52);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(182, 52);
+            this.label40.TabIndex = 24;
+            this.label40.Text = "Color";
+            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label38.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.ForeColor = System.Drawing.Color.DarkGray;
+            this.label38.Location = new System.Drawing.Point(3, 52);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(165, 52);
+            this.label38.TabIndex = 22;
+            this.label38.Text = "Plate Number";
+            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label36.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.Color.DarkGray;
+            this.label36.Location = new System.Drawing.Point(327, 0);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(182, 52);
+            this.label36.TabIndex = 20;
+            this.label36.Text = "Category";
+            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label16.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.DarkGray;
+            this.label16.Location = new System.Drawing.Point(3, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(165, 52);
+            this.label16.TabIndex = 18;
+            this.label16.Text = "VIN";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // inputPurchaseDate
+            // 
+            this.inputPurchaseDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.inputPurchaseDate.CalendarTitleBackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.inputPurchaseDate.CalendarTrailingForeColor = System.Drawing.Color.White;
+            this.inputPurchaseDate.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputPurchaseDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.inputPurchaseDate.Location = new System.Drawing.Point(515, 160);
+            this.inputPurchaseDate.Name = "inputPurchaseDate";
+            this.inputPurchaseDate.Size = new System.Drawing.Size(148, 44);
+            this.inputPurchaseDate.TabIndex = 48;
+            // 
             // guna2Panel1
             // 
             this.guna2Panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Panel1.BorderRadius = 8;
-            this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(132)))), ((int)(((byte)(191)))));
             this.guna2Panel1.Location = new System.Drawing.Point(34, 65);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(664, 5);
@@ -207,7 +637,7 @@ namespace VehicleManagementSystem.View.Forms {
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(132)))), ((int)(((byte)(191)))));
             this.label15.Location = new System.Drawing.Point(33, 21);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(236, 29);
@@ -236,6 +666,17 @@ namespace VehicleManagementSystem.View.Forms {
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(425, 359);
             this.guna2Panel2.TabIndex = 0;
+            // 
+            // guna2Panel4
+            // 
+            this.guna2Panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Panel4.BorderRadius = 8;
+            this.guna2Panel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(132)))), ((int)(((byte)(191)))));
+            this.guna2Panel4.Location = new System.Drawing.Point(37, 66);
+            this.guna2Panel4.Name = "guna2Panel4";
+            this.guna2Panel4.Size = new System.Drawing.Size(350, 5);
+            this.guna2Panel4.TabIndex = 39;
             // 
             // viewRenterBtn
             // 
@@ -352,7 +793,7 @@ namespace VehicleManagementSystem.View.Forms {
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(132)))), ((int)(((byte)(191)))));
             this.label14.Location = new System.Drawing.Point(32, 21);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(165, 29);
@@ -365,7 +806,7 @@ namespace VehicleManagementSystem.View.Forms {
             this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label20.Location = new System.Drawing.Point(349, 66);
+            this.label20.Location = new System.Drawing.Point(338, 67);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(121, 21);
             this.label20.TabIndex = 25;
@@ -374,7 +815,7 @@ namespace VehicleManagementSystem.View.Forms {
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.Location = new System.Drawing.Point(662, 1283);
+            this.panel1.Location = new System.Drawing.Point(662, 1370);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(312, 22);
@@ -386,15 +827,15 @@ namespace VehicleManagementSystem.View.Forms {
             this.tableTop.BackColor = System.Drawing.Color.Transparent;
             this.tableTop.ColumnCount = 2;
             this.tableTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 225F));
+            this.tableTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 218F));
             this.tableTop.Controls.Add(this.panelTopLeft, 0, 0);
             this.tableTop.Controls.Add(this.panelTopRight, 1, 0);
-            this.tableTop.Location = new System.Drawing.Point(38, 114);
+            this.tableTop.Location = new System.Drawing.Point(45, 109);
             this.tableTop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableTop.Name = "tableTop";
             this.tableTop.RowCount = 1;
             this.tableTop.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableTop.Size = new System.Drawing.Size(1156, 599);
+            this.tableTop.Size = new System.Drawing.Size(1156, 583);
             this.tableTop.TabIndex = 22;
             // 
             // panelTopLeft
@@ -409,7 +850,7 @@ namespace VehicleManagementSystem.View.Forms {
             this.panelTopLeft.Location = new System.Drawing.Point(0, 0);
             this.panelTopLeft.Margin = new System.Windows.Forms.Padding(0);
             this.panelTopLeft.Name = "panelTopLeft";
-            this.panelTopLeft.Size = new System.Drawing.Size(931, 599);
+            this.panelTopLeft.Size = new System.Drawing.Size(938, 583);
             this.panelTopLeft.TabIndex = 0;
             // 
             // panel2
@@ -429,7 +870,7 @@ namespace VehicleManagementSystem.View.Forms {
             this.panel2.Controls.Add(this.iconTireFrontLeft);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.labelTireFrontLeft);
-            this.panel2.Location = new System.Drawing.Point(86, 414);
+            this.panel2.Location = new System.Drawing.Point(90, 398);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(772, 181);
@@ -627,10 +1068,10 @@ namespace VehicleManagementSystem.View.Forms {
             this.pictureVehicle.FillColor = System.Drawing.Color.Transparent;
             this.pictureVehicle.Image = ((System.Drawing.Image)(resources.GetObject("pictureVehicle.Image")));
             this.pictureVehicle.ImageRotate = 0F;
-            this.pictureVehicle.Location = new System.Drawing.Point(106, 39);
+            this.pictureVehicle.Location = new System.Drawing.Point(94, 39);
             this.pictureVehicle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureVehicle.Name = "pictureVehicle";
-            this.pictureVehicle.Size = new System.Drawing.Size(724, 380);
+            this.pictureVehicle.Size = new System.Drawing.Size(768, 364);
             this.pictureVehicle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureVehicle.TabIndex = 2;
             this.pictureVehicle.TabStop = false;
@@ -638,63 +1079,146 @@ namespace VehicleManagementSystem.View.Forms {
             // panelTopRight
             // 
             this.panelTopRight.BorderRadius = 15;
-            this.panelTopRight.Controls.Add(this.progressBreakCondition);
+            this.panelTopRight.Controls.Add(this.guna2GradientPanel3);
+            this.panelTopRight.Controls.Add(this.guna2GradientPanel2);
+            this.panelTopRight.Controls.Add(this.guna2GradientPanel1);
             this.panelTopRight.Controls.Add(this.progressTillChangeOil);
-            this.panelTopRight.Controls.Add(this.progressFuelTank);
             this.panelTopRight.CustomizableEdges.BottomLeft = false;
             this.panelTopRight.CustomizableEdges.TopLeft = false;
             this.panelTopRight.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelTopRight.FillColor = System.Drawing.Color.Transparent;
-            this.panelTopRight.Location = new System.Drawing.Point(931, 0);
+            this.panelTopRight.Location = new System.Drawing.Point(938, 0);
             this.panelTopRight.Margin = new System.Windows.Forms.Padding(0);
             this.panelTopRight.Name = "panelTopRight";
-            this.panelTopRight.Size = new System.Drawing.Size(225, 599);
+            this.panelTopRight.Size = new System.Drawing.Size(218, 583);
             this.panelTopRight.TabIndex = 1;
             // 
-            // progressBreakCondition
+            // guna2GradientPanel2
             // 
-            this.progressBreakCondition.Controls.Add(this.label11);
-            this.progressBreakCondition.Controls.Add(this.label7);
-            this.progressBreakCondition.FillColor = System.Drawing.Color.DarkGray;
-            this.progressBreakCondition.FillThickness = 5;
-            this.progressBreakCondition.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.progressBreakCondition.ForeColor = System.Drawing.Color.DimGray;
-            this.progressBreakCondition.Location = new System.Drawing.Point(27, 394);
-            this.progressBreakCondition.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.progressBreakCondition.Minimum = 0;
-            this.progressBreakCondition.Name = "progressBreakCondition";
-            this.progressBreakCondition.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(132)))), ((int)(((byte)(191)))));
-            this.progressBreakCondition.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.progressBreakCondition.ProgressThickness = 8;
-            this.progressBreakCondition.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.progressBreakCondition.Size = new System.Drawing.Size(170, 170);
-            this.progressBreakCondition.TabIndex = 2;
-            this.progressBreakCondition.Text = "guna2CircleProgressBar3";
-            this.progressBreakCondition.Value = 50;
+            this.guna2GradientPanel2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.guna2GradientPanel2.BorderRadius = 12;
+            this.guna2GradientPanel2.Controls.Add(this.inputTransmissionType);
+            this.guna2GradientPanel2.Controls.Add(this.guna2PictureBox2);
+            this.guna2GradientPanel2.Controls.Add(this.label1);
+            this.guna2GradientPanel2.FillColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.guna2GradientPanel2.Location = new System.Drawing.Point(15, 136);
+            this.guna2GradientPanel2.Name = "guna2GradientPanel2";
+            this.guna2GradientPanel2.Size = new System.Drawing.Size(192, 113);
+            this.guna2GradientPanel2.TabIndex = 3;
             // 
-            // label11
+            // inputFuelType
             // 
-            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.DimGray;
-            this.label11.Location = new System.Drawing.Point(49, 53);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(79, 38);
-            this.label11.TabIndex = 17;
-            this.label11.Text = "50%";
+            this.inputFuelType.BackColor = System.Drawing.Color.Transparent;
+            this.inputFuelType.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(245)))));
+            this.inputFuelType.BorderRadius = 10;
+            this.inputFuelType.BorderThickness = 2;
+            this.inputFuelType.DisabledState.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputFuelType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.inputFuelType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.inputFuelType.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(245)))));
+            this.inputFuelType.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.inputFuelType.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.inputFuelType.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputFuelType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputFuelType.IntegralHeight = false;
+            this.inputFuelType.ItemHeight = 30;
+            this.inputFuelType.Location = new System.Drawing.Point(2, 55);
+            this.inputFuelType.Margin = new System.Windows.Forms.Padding(10);
+            this.inputFuelType.Name = "inputFuelType";
+            this.inputFuelType.Size = new System.Drawing.Size(187, 36);
+            this.inputFuelType.TabIndex = 20;
+            this.inputFuelType.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.FillColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox2.Image = global::VehicleManagementSystem.Properties.Resources.gear_box;
+            this.guna2PictureBox2.ImageRotate = 0F;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(58, 3);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.Size = new System.Drawing.Size(70, 58);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox2.TabIndex = 19;
+            this.guna2PictureBox2.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.DarkGray;
+            this.label1.Location = new System.Drawing.Point(5, 84);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(185, 29);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "Transmission";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // guna2GradientPanel1
+            // 
+            this.guna2GradientPanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.guna2GradientPanel1.BorderRadius = 12;
+            this.guna2GradientPanel1.Controls.Add(this.inputOdomter);
+            this.guna2GradientPanel1.Controls.Add(this.guna2PictureBox1);
+            this.guna2GradientPanel1.Controls.Add(this.label7);
+            this.guna2GradientPanel1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(15, 12);
+            this.guna2GradientPanel1.Name = "guna2GradientPanel1";
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(192, 113);
+            this.guna2GradientPanel1.TabIndex = 2;
+            // 
+            // inputOdomter
+            // 
+            this.inputOdomter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.inputOdomter.BorderThickness = 0;
+            this.inputOdomter.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.inputOdomter.DefaultText = "120 km";
+            this.inputOdomter.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.inputOdomter.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.inputOdomter.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.inputOdomter.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.inputOdomter.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(245)))));
+            this.inputOdomter.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.inputOdomter.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputOdomter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputOdomter.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.inputOdomter.Location = new System.Drawing.Point(0, 61);
+            this.inputOdomter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.inputOdomter.Name = "inputOdomter";
+            this.inputOdomter.PlaceholderText = "";
+            this.inputOdomter.ReadOnly = true;
+            this.inputOdomter.SelectedText = "";
+            this.inputOdomter.Size = new System.Drawing.Size(189, 30);
+            this.inputOdomter.TabIndex = 39;
+            this.inputOdomter.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox1.Image = global::VehicleManagementSystem.Properties.Resources.car_engine;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(58, 3);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(70, 58);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 19;
+            this.guna2PictureBox1.TabStop = false;
             // 
             // label7
             // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.DimGray;
-            this.label7.Location = new System.Drawing.Point(40, 98);
+            this.label7.ForeColor = System.Drawing.Color.DarkGray;
+            this.label7.Location = new System.Drawing.Point(5, 84);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(94, 42);
-            this.label7.TabIndex = 17;
-            this.label7.Text = "Break \r\nCondition";
+            this.label7.Size = new System.Drawing.Size(185, 29);
+            this.label7.TabIndex = 18;
+            this.label7.Text = "Odometer";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // progressTillChangeOil
@@ -702,18 +1226,18 @@ namespace VehicleManagementSystem.View.Forms {
             this.progressTillChangeOil.Controls.Add(this.label10);
             this.progressTillChangeOil.Controls.Add(this.label5);
             this.progressTillChangeOil.FillColor = System.Drawing.Color.DarkGray;
-            this.progressTillChangeOil.FillThickness = 5;
+            this.progressTillChangeOil.FillThickness = 6;
             this.progressTillChangeOil.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.progressTillChangeOil.ForeColor = System.Drawing.Color.DimGray;
-            this.progressTillChangeOil.Location = new System.Drawing.Point(27, 206);
+            this.progressTillChangeOil.Location = new System.Drawing.Point(24, 403);
             this.progressTillChangeOil.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.progressTillChangeOil.Minimum = 0;
             this.progressTillChangeOil.Name = "progressTillChangeOil";
             this.progressTillChangeOil.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(132)))), ((int)(((byte)(191)))));
             this.progressTillChangeOil.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.progressTillChangeOil.ProgressThickness = 8;
+            this.progressTillChangeOil.ProgressThickness = 10;
             this.progressTillChangeOil.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.progressTillChangeOil.Size = new System.Drawing.Size(168, 168);
+            this.progressTillChangeOil.Size = new System.Drawing.Size(174, 174);
             this.progressTillChangeOil.TabIndex = 1;
             this.progressTillChangeOil.Text = "guna2CircleProgressBar2";
             this.progressTillChangeOil.TextMode = Guna.UI2.WinForms.Enums.ProgressBarTextMode.Value;
@@ -722,14 +1246,14 @@ namespace VehicleManagementSystem.View.Forms {
             // label10
             // 
             this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.DimGray;
-            this.label10.Location = new System.Drawing.Point(39, 59);
+            this.label10.Location = new System.Drawing.Point(20, 52);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(93, 29);
+            this.label10.Size = new System.Drawing.Size(132, 29);
             this.label10.TabIndex = 17;
             this.label10.Text = "249 km";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
             // 
@@ -737,88 +1261,12 @@ namespace VehicleManagementSystem.View.Forms {
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DimGray;
-            this.label5.Location = new System.Drawing.Point(22, 88);
+            this.label5.Location = new System.Drawing.Point(28, 85);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(124, 42);
             this.label5.TabIndex = 16;
             this.label5.Text = "Until change \r\noil";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // progressFuelTank
-            // 
-            this.progressFuelTank.Controls.Add(this.label9);
-            this.progressFuelTank.Controls.Add(this.label1);
-            this.progressFuelTank.FillColor = System.Drawing.Color.DarkGray;
-            this.progressFuelTank.FillThickness = 5;
-            this.progressFuelTank.Font = new System.Drawing.Font("Arial", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.progressFuelTank.ForeColor = System.Drawing.Color.DimGray;
-            this.progressFuelTank.Location = new System.Drawing.Point(27, 10);
-            this.progressFuelTank.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.progressFuelTank.Minimum = 0;
-            this.progressFuelTank.Name = "progressFuelTank";
-            this.progressFuelTank.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(132)))), ((int)(((byte)(191)))));
-            this.progressFuelTank.ProgressColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.progressFuelTank.ProgressThickness = 8;
-            this.progressFuelTank.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.progressFuelTank.Size = new System.Drawing.Size(175, 175);
-            this.progressFuelTank.TabIndex = 0;
-            this.progressFuelTank.Text = "guna2CircleProgressBar1";
-            this.progressFuelTank.Value = 50;
-            // 
-            // label9
-            // 
-            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.DimGray;
-            this.label9.Location = new System.Drawing.Point(49, 58);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(79, 38);
-            this.label9.TabIndex = 16;
-            this.label9.Text = "50%";
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DimGray;
-            this.label1.Location = new System.Drawing.Point(60, 96);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 26);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "Fuel";
-            // 
-            // labelStatus
-            // 
-            this.labelStatus.AutoSize = true;
-            this.labelStatus.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.labelStatus.BackColor = System.Drawing.Color.Transparent;
-            this.labelStatus.BorderRadius = 15;
-            this.labelStatus.BorderThickness = 0;
-            this.labelStatus.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.labelStatus.DefaultText = "inMaintenance";
-            this.labelStatus.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.labelStatus.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.labelStatus.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.labelStatus.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.labelStatus.FillColor = System.Drawing.Color.Thistle;
-            this.labelStatus.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.labelStatus.Font = new System.Drawing.Font("Arial", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelStatus.ForeColor = System.Drawing.Color.White;
-            this.labelStatus.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.labelStatus.Location = new System.Drawing.Point(208, 22);
-            this.labelStatus.Margin = new System.Windows.Forms.Padding(4, 8, 4, 8);
-            this.labelStatus.Name = "labelStatus";
-            this.labelStatus.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.labelStatus.PlaceholderForeColor = System.Drawing.Color.Black;
-            this.labelStatus.PlaceholderText = "";
-            this.labelStatus.ReadOnly = true;
-            this.labelStatus.SelectedText = "";
-            this.labelStatus.Size = new System.Drawing.Size(162, 44);
-            this.labelStatus.TabIndex = 21;
-            this.labelStatus.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.labelStatus.WordWrap = false;
             // 
             // label3
             // 
@@ -826,7 +1274,7 @@ namespace VehicleManagementSystem.View.Forms {
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Gray;
-            this.label3.Location = new System.Drawing.Point(88, 66);
+            this.label3.Location = new System.Drawing.Point(77, 67);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(267, 21);
             this.label3.TabIndex = 19;
@@ -846,7 +1294,7 @@ namespace VehicleManagementSystem.View.Forms {
             this.backBtn.ForeColor = System.Drawing.Color.White;
             this.backBtn.Image = global::VehicleManagementSystem.Properties.Resources.chevron_backward_icon;
             this.backBtn.ImageSize = new System.Drawing.Size(40, 40);
-            this.backBtn.Location = new System.Drawing.Point(25, 33);
+            this.backBtn.Location = new System.Drawing.Point(14, 34);
             this.backBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.backBtn.Name = "backBtn";
             this.backBtn.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -885,405 +1333,68 @@ namespace VehicleManagementSystem.View.Forms {
             this.mySqlCommand2.Transaction = null;
             this.mySqlCommand2.UpdatedRowSource = System.Data.UpdateRowSource.None;
             // 
-            // guna2Panel4
+            // label9
             // 
-            this.guna2Panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2Panel4.BorderRadius = 8;
-            this.guna2Panel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.guna2Panel4.Location = new System.Drawing.Point(37, 66);
-            this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.Size = new System.Drawing.Size(350, 5);
-            this.guna2Panel4.TabIndex = 39;
+            this.label9.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.DarkGray;
+            this.label9.Location = new System.Drawing.Point(5, 84);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(185, 29);
+            this.label9.TabIndex = 18;
+            this.label9.Text = "Fuel Type";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // tableVehicleInformation
+            // guna2PictureBox3
             // 
-            this.tableVehicleInformation.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableVehicleInformation.ColumnCount = 4;
-            this.tableVehicleInformation.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 171F));
-            this.tableVehicleInformation.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.00001F));
-            this.tableVehicleInformation.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 188F));
-            this.tableVehicleInformation.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableVehicleInformation.Controls.Add(this.inputPurchasePrice, 3, 4);
-            this.tableVehicleInformation.Controls.Add(this.inputYearModel, 1, 4);
-            this.tableVehicleInformation.Controls.Add(this.inputModel, 1, 3);
-            this.tableVehicleInformation.Controls.Add(this.inputSeatingCap, 3, 2);
-            this.tableVehicleInformation.Controls.Add(this.inputManufacturer, 1, 2);
-            this.tableVehicleInformation.Controls.Add(this.inputColor, 3, 1);
-            this.tableVehicleInformation.Controls.Add(this.inputPlateNum, 1, 1);
-            this.tableVehicleInformation.Controls.Add(this.inputCategory, 3, 0);
-            this.tableVehicleInformation.Controls.Add(this.inputVehicleIdentification, 1, 0);
-            this.tableVehicleInformation.Controls.Add(this.label52, 2, 4);
-            this.tableVehicleInformation.Controls.Add(this.label50, 0, 4);
-            this.tableVehicleInformation.Controls.Add(this.label48, 2, 3);
-            this.tableVehicleInformation.Controls.Add(this.label46, 0, 3);
-            this.tableVehicleInformation.Controls.Add(this.label44, 2, 2);
-            this.tableVehicleInformation.Controls.Add(this.label42, 0, 2);
-            this.tableVehicleInformation.Controls.Add(this.label40, 2, 1);
-            this.tableVehicleInformation.Controls.Add(this.label38, 0, 1);
-            this.tableVehicleInformation.Controls.Add(this.label36, 2, 0);
-            this.tableVehicleInformation.Controls.Add(this.label16, 0, 0);
-            this.tableVehicleInformation.Controls.Add(this.inputPurchaseDate, 3, 3);
-            this.tableVehicleInformation.Location = new System.Drawing.Point(37, 76);
-            this.tableVehicleInformation.Name = "tableVehicleInformation";
-            this.tableVehicleInformation.RowCount = 5;
-            this.tableVehicleInformation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableVehicleInformation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableVehicleInformation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableVehicleInformation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableVehicleInformation.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tableVehicleInformation.Size = new System.Drawing.Size(666, 260);
-            this.tableVehicleInformation.TabIndex = 39;
+            this.guna2PictureBox3.FillColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox3.Image = global::VehicleManagementSystem.Properties.Resources.gas_station;
+            this.guna2PictureBox3.ImageRotate = 0F;
+            this.guna2PictureBox3.Location = new System.Drawing.Point(58, 3);
+            this.guna2PictureBox3.Name = "guna2PictureBox3";
+            this.guna2PictureBox3.Size = new System.Drawing.Size(70, 50);
+            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox3.TabIndex = 19;
+            this.guna2PictureBox3.TabStop = false;
             // 
-            // label16
+            // guna2GradientPanel3
             // 
-            this.label16.AutoSize = true;
-            this.label16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label16.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.DarkGray;
-            this.label16.Location = new System.Drawing.Point(3, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(165, 52);
-            this.label16.TabIndex = 18;
-            this.label16.Text = "VIN";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.guna2GradientPanel3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.guna2GradientPanel3.BorderRadius = 12;
+            this.guna2GradientPanel3.Controls.Add(this.guna2PictureBox3);
+            this.guna2GradientPanel3.Controls.Add(this.inputFuelType);
+            this.guna2GradientPanel3.Controls.Add(this.label9);
+            this.guna2GradientPanel3.FillColor = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel3.FillColor2 = System.Drawing.Color.Transparent;
+            this.guna2GradientPanel3.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.guna2GradientPanel3.Location = new System.Drawing.Point(15, 264);
+            this.guna2GradientPanel3.Name = "guna2GradientPanel3";
+            this.guna2GradientPanel3.Size = new System.Drawing.Size(192, 113);
+            this.guna2GradientPanel3.TabIndex = 4;
             // 
-            // label36
+            // inputTransmissionType
             // 
-            this.label36.AutoSize = true;
-            this.label36.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label36.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.ForeColor = System.Drawing.Color.DarkGray;
-            this.label36.Location = new System.Drawing.Point(327, 0);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(182, 52);
-            this.label36.TabIndex = 20;
-            this.label36.Text = "Category";
-            this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label38.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.ForeColor = System.Drawing.Color.DarkGray;
-            this.label38.Location = new System.Drawing.Point(3, 52);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(165, 52);
-            this.label38.TabIndex = 22;
-            this.label38.Text = "Plate Number";
-            this.label38.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label40.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.ForeColor = System.Drawing.Color.DarkGray;
-            this.label40.Location = new System.Drawing.Point(327, 52);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(182, 52);
-            this.label40.TabIndex = 24;
-            this.label40.Text = "Color";
-            this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label42.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.ForeColor = System.Drawing.Color.DarkGray;
-            this.label42.Location = new System.Drawing.Point(3, 104);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(165, 52);
-            this.label42.TabIndex = 26;
-            this.label42.Text = "Manufacturer";
-            this.label42.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label44.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.ForeColor = System.Drawing.Color.DarkGray;
-            this.label44.Location = new System.Drawing.Point(327, 104);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(182, 52);
-            this.label44.TabIndex = 28;
-            this.label44.Text = "Seating Cap,";
-            this.label44.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label46.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.ForeColor = System.Drawing.Color.DarkGray;
-            this.label46.Location = new System.Drawing.Point(3, 156);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(165, 52);
-            this.label46.TabIndex = 30;
-            this.label46.Text = "Model";
-            this.label46.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label48.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.ForeColor = System.Drawing.Color.DarkGray;
-            this.label48.Location = new System.Drawing.Point(327, 156);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(182, 52);
-            this.label48.TabIndex = 32;
-            this.label48.Text = "Purchase Date";
-            this.label48.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label50.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.ForeColor = System.Drawing.Color.DarkGray;
-            this.label50.Location = new System.Drawing.Point(3, 208);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(165, 52);
-            this.label50.TabIndex = 34;
-            this.label50.Text = "Year Model";
-            this.label50.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label52.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.ForeColor = System.Drawing.Color.DarkGray;
-            this.label52.Location = new System.Drawing.Point(327, 208);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(182, 52);
-            this.label52.TabIndex = 36;
-            this.label52.Text = "Purchase Price";
-            this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // inputVehicleIdentification
-            // 
-            this.inputVehicleIdentification.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.inputVehicleIdentification.BorderThickness = 0;
-            this.inputVehicleIdentification.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.inputVehicleIdentification.DefaultText = "";
-            this.inputVehicleIdentification.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.inputVehicleIdentification.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.inputVehicleIdentification.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.inputVehicleIdentification.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.inputVehicleIdentification.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.inputVehicleIdentification.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputVehicleIdentification.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.inputVehicleIdentification.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.inputVehicleIdentification.Location = new System.Drawing.Point(175, 8);
-            this.inputVehicleIdentification.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.inputVehicleIdentification.Name = "inputVehicleIdentification";
-            this.inputVehicleIdentification.PlaceholderText = "";
-            this.inputVehicleIdentification.ReadOnly = true;
-            this.inputVehicleIdentification.SelectedText = "";
-            this.inputVehicleIdentification.Size = new System.Drawing.Size(145, 36);
-            this.inputVehicleIdentification.TabIndex = 38;
-            // 
-            // inputCategory
-            // 
-            this.inputCategory.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.inputCategory.BorderThickness = 0;
-            this.inputCategory.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.inputCategory.DefaultText = "";
-            this.inputCategory.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.inputCategory.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.inputCategory.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.inputCategory.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.inputCategory.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.inputCategory.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.inputCategory.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.inputCategory.Location = new System.Drawing.Point(517, 6);
-            this.inputCategory.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.inputCategory.Name = "inputCategory";
-            this.inputCategory.PlaceholderText = "";
-            this.inputCategory.ReadOnly = true;
-            this.inputCategory.SelectedText = "";
-            this.inputCategory.Size = new System.Drawing.Size(144, 40);
-            this.inputCategory.TabIndex = 39;
-            // 
-            // inputPlateNum
-            // 
-            this.inputPlateNum.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.inputPlateNum.BorderThickness = 0;
-            this.inputPlateNum.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.inputPlateNum.DefaultText = "";
-            this.inputPlateNum.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.inputPlateNum.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.inputPlateNum.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.inputPlateNum.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.inputPlateNum.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.inputPlateNum.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputPlateNum.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.inputPlateNum.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.inputPlateNum.Location = new System.Drawing.Point(176, 58);
-            this.inputPlateNum.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.inputPlateNum.Name = "inputPlateNum";
-            this.inputPlateNum.PlaceholderText = "";
-            this.inputPlateNum.ReadOnly = true;
-            this.inputPlateNum.SelectedText = "";
-            this.inputPlateNum.Size = new System.Drawing.Size(143, 40);
-            this.inputPlateNum.TabIndex = 40;
-            // 
-            // inputColor
-            // 
-            this.inputColor.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.inputColor.BorderThickness = 0;
-            this.inputColor.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.inputColor.DefaultText = "";
-            this.inputColor.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.inputColor.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.inputColor.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.inputColor.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.inputColor.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.inputColor.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputColor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.inputColor.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.inputColor.Location = new System.Drawing.Point(517, 58);
-            this.inputColor.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.inputColor.Name = "inputColor";
-            this.inputColor.PlaceholderText = "";
-            this.inputColor.ReadOnly = true;
-            this.inputColor.SelectedText = "";
-            this.inputColor.Size = new System.Drawing.Size(144, 40);
-            this.inputColor.TabIndex = 41;
-            // 
-            // inputManufacturer
-            // 
-            this.inputManufacturer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.inputManufacturer.BorderThickness = 0;
-            this.inputManufacturer.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.inputManufacturer.DefaultText = "";
-            this.inputManufacturer.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.inputManufacturer.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.inputManufacturer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.inputManufacturer.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.inputManufacturer.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.inputManufacturer.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputManufacturer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.inputManufacturer.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.inputManufacturer.Location = new System.Drawing.Point(176, 110);
-            this.inputManufacturer.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.inputManufacturer.Name = "inputManufacturer";
-            this.inputManufacturer.PlaceholderText = "";
-            this.inputManufacturer.ReadOnly = true;
-            this.inputManufacturer.SelectedText = "";
-            this.inputManufacturer.Size = new System.Drawing.Size(143, 40);
-            this.inputManufacturer.TabIndex = 42;
-            // 
-            // inputSeatingCap
-            // 
-            this.inputSeatingCap.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.inputSeatingCap.BorderThickness = 0;
-            this.inputSeatingCap.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.inputSeatingCap.DefaultText = "";
-            this.inputSeatingCap.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.inputSeatingCap.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.inputSeatingCap.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.inputSeatingCap.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.inputSeatingCap.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.inputSeatingCap.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputSeatingCap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.inputSeatingCap.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.inputSeatingCap.Location = new System.Drawing.Point(517, 110);
-            this.inputSeatingCap.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.inputSeatingCap.Name = "inputSeatingCap";
-            this.inputSeatingCap.PlaceholderText = "";
-            this.inputSeatingCap.ReadOnly = true;
-            this.inputSeatingCap.SelectedText = "";
-            this.inputSeatingCap.Size = new System.Drawing.Size(144, 40);
-            this.inputSeatingCap.TabIndex = 43;
-            // 
-            // inputModel
-            // 
-            this.inputModel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.inputModel.BorderThickness = 0;
-            this.inputModel.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.inputModel.DefaultText = "";
-            this.inputModel.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.inputModel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.inputModel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.inputModel.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.inputModel.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.inputModel.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputModel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.inputModel.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.inputModel.Location = new System.Drawing.Point(176, 162);
-            this.inputModel.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.inputModel.Name = "inputModel";
-            this.inputModel.PlaceholderText = "";
-            this.inputModel.ReadOnly = true;
-            this.inputModel.SelectedText = "";
-            this.inputModel.Size = new System.Drawing.Size(143, 40);
-            this.inputModel.TabIndex = 44;
-            // 
-            // inputYearModel
-            // 
-            this.inputYearModel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.inputYearModel.BorderThickness = 0;
-            this.inputYearModel.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.inputYearModel.DefaultText = "";
-            this.inputYearModel.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.inputYearModel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.inputYearModel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.inputYearModel.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.inputYearModel.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.inputYearModel.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputYearModel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.inputYearModel.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.inputYearModel.Location = new System.Drawing.Point(176, 214);
-            this.inputYearModel.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.inputYearModel.Name = "inputYearModel";
-            this.inputYearModel.PlaceholderText = "";
-            this.inputYearModel.ReadOnly = true;
-            this.inputYearModel.SelectedText = "";
-            this.inputYearModel.Size = new System.Drawing.Size(143, 40);
-            this.inputYearModel.TabIndex = 46;
-            // 
-            // inputPurchasePrice
-            // 
-            this.inputPurchasePrice.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.inputPurchasePrice.BorderThickness = 0;
-            this.inputPurchasePrice.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.inputPurchasePrice.DefaultText = "";
-            this.inputPurchasePrice.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.inputPurchasePrice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.inputPurchasePrice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.inputPurchasePrice.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.inputPurchasePrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.inputPurchasePrice.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputPurchasePrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.inputPurchasePrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.inputPurchasePrice.Location = new System.Drawing.Point(517, 214);
-            this.inputPurchasePrice.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.inputPurchasePrice.Name = "inputPurchasePrice";
-            this.inputPurchasePrice.PlaceholderText = "";
-            this.inputPurchasePrice.ReadOnly = true;
-            this.inputPurchasePrice.SelectedText = "";
-            this.inputPurchasePrice.Size = new System.Drawing.Size(144, 40);
-            this.inputPurchasePrice.TabIndex = 47;
-            // 
-            // inputPurchaseDate
-            // 
-            this.inputPurchaseDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.inputPurchaseDate.CalendarTitleBackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.inputPurchaseDate.CalendarTrailingForeColor = System.Drawing.Color.White;
-            this.inputPurchaseDate.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.inputPurchaseDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.inputPurchaseDate.Location = new System.Drawing.Point(515, 160);
-            this.inputPurchaseDate.Name = "inputPurchaseDate";
-            this.inputPurchaseDate.Size = new System.Drawing.Size(148, 44);
-            this.inputPurchaseDate.TabIndex = 48;
+            this.inputTransmissionType.BackColor = System.Drawing.Color.Transparent;
+            this.inputTransmissionType.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(245)))));
+            this.inputTransmissionType.BorderRadius = 10;
+            this.inputTransmissionType.BorderThickness = 2;
+            this.inputTransmissionType.DisabledState.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputTransmissionType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.inputTransmissionType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.inputTransmissionType.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(245)))));
+            this.inputTransmissionType.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.inputTransmissionType.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.inputTransmissionType.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.inputTransmissionType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.inputTransmissionType.IntegralHeight = false;
+            this.inputTransmissionType.ItemHeight = 30;
+            this.inputTransmissionType.Location = new System.Drawing.Point(3, 56);
+            this.inputTransmissionType.Margin = new System.Windows.Forms.Padding(10);
+            this.inputTransmissionType.Name = "inputTransmissionType";
+            this.inputTransmissionType.Size = new System.Drawing.Size(187, 36);
+            this.inputTransmissionType.TabIndex = 21;
+            this.inputTransmissionType.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // frmVehicleDetails
             // 
@@ -1300,6 +1411,8 @@ namespace VehicleManagementSystem.View.Forms {
             this.tableBottom.ResumeLayout(false);
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel3.PerformLayout();
+            this.tableVehicleInformation.ResumeLayout(false);
+            this.tableVehicleInformation.PerformLayout();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
@@ -1313,15 +1426,15 @@ namespace VehicleManagementSystem.View.Forms {
             ((System.ComponentModel.ISupportInitialize)(this.iconTireFrontLeft)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureVehicle)).EndInit();
             this.panelTopRight.ResumeLayout(false);
-            this.progressBreakCondition.ResumeLayout(false);
-            this.progressBreakCondition.PerformLayout();
+            this.guna2GradientPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
+            this.guna2GradientPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.progressTillChangeOil.ResumeLayout(false);
             this.progressTillChangeOil.PerformLayout();
-            this.progressFuelTank.ResumeLayout(false);
-            this.progressFuelTank.PerformLayout();
             this.panelBg.ResumeLayout(false);
-            this.tableVehicleInformation.ResumeLayout(false);
-            this.tableVehicleInformation.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
+            this.guna2GradientPanel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1339,8 +1452,6 @@ namespace VehicleManagementSystem.View.Forms {
         private Guna.UI2.WinForms.Guna2Panel panelTopLeft;
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2Panel panelTopRight;
-        private Guna.UI2.WinForms.Guna2CircleProgressBar progressFuelTank;
-        private Guna.UI2.WinForms.Guna2CircleProgressBar progressBreakCondition;
         private Guna.UI2.WinForms.Guna2CircleProgressBar progressTillChangeOil;
         private FontAwesome.Sharp.IconPictureBox iconTireFrontLeft;
         private System.Windows.Forms.Label label2;
@@ -1356,10 +1467,6 @@ namespace VehicleManagementSystem.View.Forms {
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label labelTireBackLeft;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
@@ -1403,5 +1510,17 @@ namespace VehicleManagementSystem.View.Forms {
         private Guna.UI2.WinForms.Guna2TextBox inputCategory;
         private Guna.UI2.WinForms.Guna2TextBox inputVehicleIdentification;
         private System.Windows.Forms.DateTimePicker inputPurchaseDate;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
+        private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
+        private Guna.UI2.WinForms.Guna2TextBox inputOdomter;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private System.Windows.Forms.Label label7;
+        private Guna.UI2.WinForms.Guna2ComboBox inputFuelType;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel3;
+        private Guna.UI2.WinForms.Guna2ComboBox inputTransmissionType;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
+        private System.Windows.Forms.Label label9;
     }
 }

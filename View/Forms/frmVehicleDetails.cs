@@ -1,6 +1,9 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Collections.Generic;
+using System.Drawing;
 using System.Windows.Forms;
 using VehicleManagementSystem.Classes;
+using VehicleManagementSystem.Data;
 using VehicleManagementSystem.Dto;
 using VehicleManagementSystem.Forms;
 
@@ -14,9 +17,46 @@ namespace VehicleManagementSystem.View.Forms {
             InitializeComponent();
             LoadUI();
             LoadVehicleInformation();
+            LoadComboBoxInformation();
+        }
+
+        private void LoadComboBoxInformation() {
+            inputFuelType.DataSource = Enum.GetValues(typeof(VehicleEnums.FuelType));
+            var fuelTypeMap = new Dictionary<string, VehicleEnums.FuelType>{
+                { "Gasoline", VehicleEnums.FuelType.Gasoline },
+                { "Diesel", VehicleEnums.FuelType.Diesel },
+                { "Electric", VehicleEnums.FuelType.Electric }
+            };
+
+            if (fuelTypeMap.TryGetValue(_vehicle.FuelType, out var fuelType)) {
+                inputFuelType.SelectedItem = fuelType;
+            }
+
+            inputFuelType.Enabled = false;
+
+            inputTransmissionType.DataSource = Enum.GetValues(typeof(VehicleEnums.TransmissionType));
+            var transmissionTypeMap = new Dictionary<string, VehicleEnums.TransmissionType>{
+                { "Manual", VehicleEnums.TransmissionType.Manual},
+                { "Automatic", VehicleEnums.TransmissionType.Automatic },
+                { "SemiAutomatic", VehicleEnums.TransmissionType.SemiAutomatic }
+            };
+
+            if (transmissionTypeMap.TryGetValue(_vehicle.FuelType, out var transmissionType)) {
+                inputTransmissionType.SelectedItem = transmissionType;
+            }
+
+            inputTransmissionType.Enabled = false;
         }
 
         private void LoadVehicleInformation() {
+            inputOdomter.Text = _vehicle.CurrentOdometerReading.ToString() + " km";
+
+            
+
+            //inputCategory.DataSource = Enum.GetValues(typeof(VehicleEnums.Category));
+
+            //inputTransmissionType.DataSource = Enum.GetValues(typeof(VehicleEnums.TransmissionType));
+
             inputCategory.Text = _vehicle.Category;
             inputColor.Text = _vehicle.Color;
             inputManufacturer.Text = _vehicle.Manufacturer;

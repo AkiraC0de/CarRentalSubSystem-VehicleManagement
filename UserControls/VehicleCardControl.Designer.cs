@@ -109,12 +109,12 @@ namespace VehicleManagementSystem.UserControls {
             this.labelStatus.Location = new System.Drawing.Point(0, 12);
             this.labelStatus.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.labelStatus.Name = "labelStatus";
-            this.labelStatus.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelStatus.Padding = new System.Windows.Forms.Padding(4);
             this.labelStatus.PlaceholderForeColor = System.Drawing.Color.Black;
             this.labelStatus.PlaceholderText = "";
             this.labelStatus.ReadOnly = true;
             this.labelStatus.SelectedText = "";
-            this.labelStatus.Size = new System.Drawing.Size(143, 38);
+            this.labelStatus.Size = new System.Drawing.Size(134, 38);
             this.labelStatus.TabIndex = 1;
             this.labelStatus.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.labelStatus.WordWrap = false;
